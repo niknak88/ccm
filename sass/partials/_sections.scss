@@ -1,0 +1,48 @@
+section,
+.section {
+    position: relative;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section0 {
+    background-image: url(../images/e_background_4.png);
+}
+
+#section1 {
+    background-image: url(../images/squad.png);
+}
+
+#section2 {
+    background-image: url(../images/1.jpg);
+
+}
+
+#section3 {
+    background-image: url(../images/3.jpg);
+}
+
+#section4 {
+    background-image: url(../images/4.jpg);
+}
+
+#section5 {
+    background-image: url(../images/5.jpg);
+}
+
+.info {
+    width: 50%;
+    float: right;
+    padding: 80px;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    font-size: 22px;
+    background: rgba(21, 21, 21, 0.9);
+    div {
+        /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
+        padding-bottom: 15px;
+    }
+}

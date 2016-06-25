@@ -1,0 +1,142 @@
+#nav-icon3 {
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    margin: 50px;
+    @include rotate(0deg);
+    @include single-transition(all, .3s, ease-in-out);
+    cursor: pointer;
+    @media (max-width: 991px) {
+        width: 50px;
+        height: 30px;
+        margin: 40px;
+    }
+    @media (max-width: 767px) {
+        margin: 30px;
+    }
+    span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        @include rotate(0deg);
+        @include single-transition(all, .25s, ease-in-out);
+        &:nth-child(1) {
+            top: 0px;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            top: 18px;
+        }
+        &:nth-child(4) {
+            top: 36px;
+        }
+        @media (max-width: 991px) {
+            height: 6px;
+            &:nth-child(2),
+            &:nth-child(3) {
+                top: 12px;
+            }
+            &:nth-child(4) {
+                top: 24px;
+            }
+        }
+    }
+    &.open {
+        span {
+            &:nth-child(1){
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                @include rotate(45deg);
+            }
+            &:nth-child(3) {
+                @include rotate(-45deg);
+            }
+            &:nth-child(4) {
+                top: 18px;
+                width: 0%;
+                left: 50%;
+            }
+        }    
+    }
+}
+
+
+nav#sidebar {
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    top: 0;
+    background-color: #212121;
+    z-index: 1200;
+    overflow-y: scroll;
+    @include single-transition(all, .3s, ease-in-out);
+    //for large screen
+    left: -14.8%;
+    height: 100%;
+    width: 15.5%;
+    right: 84.5%;
+    overflow: hidden;
+    &.open {
+        left: 0;
+    }
+    .sidebar-logo {
+        display: block;
+        text-align: center;
+        padding: 13px 0 10px;
+        //for large screen
+        text-align: right;
+        padding: 4em 2em 4em 0;
+        svg {
+            width: 30px;
+            height: 30px;
+            //for large screen
+            width: 70px;
+            height: 70px;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #272727;
+        li{
+            list-style: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #272727;
+            position: relative;
+            a{
+                display: block;
+                padding: 1em 0 .8em 20px;
+                position: relative;
+                z-index: 5;
+                text-align: left;
+                color: #aaa;
+                text-decoration: none;
+                font-weight: 200!important;
+/*                font-family: din-light,sans-serif;
+                font-family: "Helvetica Neue",helvetica,sans-serif;*/
+                text-transform: uppercase;
+                -webkit-transition: all .15s;
+                transition: all .15s;
+                //for large screen
+                padding: 1.2em 2em 1em 0;
+                text-align: right;
+            }
+            &.active {
+                border-right: 10px solid shade($redCM, 50%);
+            }
+        }
+    }
+}

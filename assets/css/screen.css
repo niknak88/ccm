@@ -1,0 +1,800 @@
+@import url(https://fonts.googleapis.com/css?family=Graduate);
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@font-face {
+  font-family: 'fontawesome';
+  src: url("../fonts/fontawesome.eot");
+  src: url("../fonts/fontawesome.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome.svg#fontawesome") format("svg"), url("../fonts/fontawesome.woff") format("woff"), url("../fonts/fontawesome.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 30, ../../sass/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Graduate", cursive;
+}
+
+/* line 33, ../../sass/partials/_base.scss */
+* {
+  font-family: 'Ubuntu';
+  /*font-family: $fontAlt;*/
+}
+
+/*!
+ * fullPage 2.8.1
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ * Contribution by Jhony0311
+ */
+/* line 10, ../../sass/partials/_fullPage.scss */
+html.fp-enabled,
+.fp-enabled body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 18, ../../sass/partials/_fullPage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+
+/* line 28, ../../sass/partials/_fullPage.scss */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box;
+}
+
+/* line 34, ../../sass/partials/_fullPage.scss */
+.fp-slide {
+  float: left;
+}
+
+/* line 37, ../../sass/partials/_fullPage.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+
+/* line 41, ../../sass/partials/_fullPage.scss */
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out;
+}
+
+/* line 49, ../../sass/partials/_fullPage.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 54, ../../sass/partials/_fullPage.scss */
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 60, ../../sass/partials/_fullPage.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+
+/* line 64, ../../sass/partials/_fullPage.scss */
+.fp-controlArrow {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 81, ../../sass/partials/_fullPage.scss */
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+/* line 88, ../../sass/partials/_fullPage.scss */
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* line 94, ../../sass/partials/_fullPage.scss */
+.fp-scrollable {
+  overflow: scroll;
+}
+
+/* line 97, ../../sass/partials/_fullPage.scss */
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* line 101, ../../sass/partials/_fullPage.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+/* line 107, ../../sass/partials/_fullPage.scss */
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+/* line 111, ../../sass/partials/_fullPage.scss */
+.fp-slidesNav.top {
+  top: 17px;
+}
+
+/* line 117, ../../sass/partials/_fullPage.scss */
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 121, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+/* line 128, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 137, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+/* line 144, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li:hover #fp-nav ul li a.active span, #fp-slidesNav ul li:hover #fp-nav ul li a.active span, #fp-nav ul li:hover
+.fp-slidesNav ul li a.active span, #fp-slidesNav ul li:hover
+.fp-slidesNav ul li a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+/* line 152, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: #333;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+/* line 173, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -5px 0px 0px -5px;
+}
+
+/* line 183, ../../sass/partials/_fullPage.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 190, ../../sass/partials/_fullPage.scss */
+#fp-nav.right {
+  right: 17px;
+}
+/* line 193, ../../sass/partials/_fullPage.scss */
+#fp-nav.left {
+  left: 17px;
+}
+/* line 198, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0;
+  cursor: pointer;
+}
+/* line 212, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+/* line 221, ../../sass/partials/_fullPage.scss */
+#fp-nav ul li:hover .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1;
+}
+/* line 230, ../../sass/partials/_fullPage.scss */
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1;
+}
+
+/* line 237, ../../sass/partials/_fullPage.scss */
+.fp-slidesNav ul li {
+  display: inline-block;
+}
+
+/* line 242, ../../sass/partials/_fullPage.scss */
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+  height: auto !important;
+}
+
+/* line 248, ../../sass/partials/_fullPage.scss */
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+  height: auto !important;
+}
+
+/* line 1, ../../sass/partials/_navigation.scss */
+#nav-icon3 {
+  width: 60px;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  margin: 50px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  /* line 1, ../../sass/partials/_navigation.scss */
+  #nav-icon3 {
+    width: 50px;
+    height: 30px;
+    margin: 40px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1, ../../sass/partials/_navigation.scss */
+  #nav-icon3 {
+    margin: 30px;
+  }
+}
+/* line 20, ../../sass/partials/_navigation.scss */
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+/* line 31, ../../sass/partials/_navigation.scss */
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+/* line 35, ../../sass/partials/_navigation.scss */
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+/* line 38, ../../sass/partials/_navigation.scss */
+#nav-icon3 span:nth-child(4) {
+  top: 36px;
+}
+@media (max-width: 991px) {
+  /* line 20, ../../sass/partials/_navigation.scss */
+  #nav-icon3 span {
+    height: 6px;
+  }
+  /* line 44, ../../sass/partials/_navigation.scss */
+  #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+    top: 12px;
+  }
+  /* line 47, ../../sass/partials/_navigation.scss */
+  #nav-icon3 span:nth-child(4) {
+    top: 24px;
+  }
+}
+/* line 54, ../../sass/partials/_navigation.scss */
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+/* line 59, ../../sass/partials/_navigation.scss */
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 62, ../../sass/partials/_navigation.scss */
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 65, ../../sass/partials/_navigation.scss */
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* line 75, ../../sass/partials/_navigation.scss */
+nav#sidebar {
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  top: 0;
+  background-color: #212121;
+  z-index: 1200;
+  overflow-y: scroll;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  left: -14.8%;
+  height: 100%;
+  width: 15.5%;
+  right: 84.5%;
+  overflow: hidden;
+}
+/* line 90, ../../sass/partials/_navigation.scss */
+nav#sidebar.open {
+  left: 0;
+}
+/* line 93, ../../sass/partials/_navigation.scss */
+nav#sidebar .sidebar-logo {
+  display: block;
+  text-align: center;
+  padding: 13px 0 10px;
+  text-align: right;
+  padding: 4em 2em 4em 0;
+}
+/* line 100, ../../sass/partials/_navigation.scss */
+nav#sidebar .sidebar-logo svg {
+  width: 30px;
+  height: 30px;
+  width: 70px;
+  height: 70px;
+}
+/* line 108, ../../sass/partials/_navigation.scss */
+nav#sidebar ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #272727;
+}
+/* line 112, ../../sass/partials/_navigation.scss */
+nav#sidebar ul li {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #272727;
+  position: relative;
+}
+/* line 119, ../../sass/partials/_navigation.scss */
+nav#sidebar ul li a {
+  display: block;
+  padding: 1em 0 .8em 20px;
+  position: relative;
+  z-index: 5;
+  text-align: left;
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 200 !important;
+  /*                font-family: din-light,sans-serif;
+                  font-family: "Helvetica Neue",helvetica,sans-serif;*/
+  text-transform: uppercase;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+  padding: 1.2em 2em 1em 0;
+  text-align: right;
+}
+/* line 137, ../../sass/partials/_navigation.scss */
+nav#sidebar ul li.active {
+  border-right: 10px solid #71100d;
+}
+
+/* line 1, ../../sass/partials/_header.scss */
+header {
+  width: 100%;
+  height: 445px;
+  padding: 2.875em 4.875em 1.875em;
+  margin-top: -250px;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  /* line 12, ../../sass/partials/_header.scss */
+  header h1 {
+    font-size: 5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 1, ../../sass/partials/_header.scss */
+  header {
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    margin-top: -100px;
+    margin-left: -150px;
+  }
+  /* line 22, ../../sass/partials/_header.scss */
+  header h1 {
+    font-size: 2.6em;
+  }
+}
+/* line 26, ../../sass/partials/_header.scss */
+header h1 {
+  font-size: 7em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgba(21, 21, 21, 0.9), 1px -1px 0 rgba(21, 21, 21, 0.9), -1px 1px 0 rgba(21, 21, 21, 0.9), 1px 1px 0 rgba(21, 21, 21, 0.9), -2px -2px 0 rgba(21, 21, 21, 0.9), 2px -2px 0 rgba(21, 21, 21, 0.9), -2px 2px 0 rgba(21, 21, 21, 0.9), 2px 2px 0 rgba(21, 21, 21, 0.9), -3px -3px 0 rgba(21, 21, 21, 0.9), 3px -3px 0 rgba(21, 21, 21, 0.9), -3px 3px 0 rgba(21, 21, 21, 0.9), 3px 3px 0 rgba(21, 21, 21, 0.9), -4px -4px 0 rgba(21, 21, 21, 0.9), 4px -4px 0 rgba(21, 21, 21, 0.9), -4px 4px 0 rgba(21, 21, 21, 0.9), 4px 4pX 50px black;
+}
+/* line 50, ../../sass/partials/_header.scss */
+header span {
+  font-size: 1.6em;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: -2px -2px 0 rgba(21, 21, 21, 0.9), 2px -2px 0 rgba(21, 21, 21, 0.9), -2px 2px 0 rgba(21, 21, 21, 0.9), 2px 2px 0 rgba(21, 21, 21, 0.9), 0 0px 10px black;
+  margin-top: 10px;
+  display: block;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  text-transform: uppercase;
+}
+/* line 66, ../../sass/partials/_header.scss */
+header nav {
+  float: right;
+}
+/* line 68, ../../sass/partials/_header.scss */
+header nav a {
+  display: block;
+  float: left;
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  background: #fff;
+  border-radius: 50%;
+  color: transparent;
+  margin: 0 0.1em;
+  border: 4px solid white;
+  text-indent: -8000px;
+}
+/* line 80, ../../sass/partials/_header.scss */
+header nav a:after {
+  content: attr(data-info);
+  color: white;
+  position: absolute;
+  width: 600%;
+  top: 120%;
+  text-align: right;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+/* line 91, ../../sass/partials/_header.scss */
+header nav a:hover {
+  background: #47a3da;
+}
+/* line 93, ../../sass/partials/_header.scss */
+header nav a:hover:after {
+  opacity: 1;
+}
+/* line 96, ../../sass/partials/_header.scss */
+header nav a:hover:before {
+  color: white;
+}
+
+/* line 103, ../../sass/partials/_header.scss */
+.sr-only {
+  display: none;
+}
+
+/* line 106, ../../sass/partials/_header.scss */
+.share {
+  margin: 20px auto;
+}
+/* line 108, ../../sass/partials/_header.scss */
+.share li {
+  display: inline-block;
+  /*        a {
+              font-size: 16px;
+              width: 42px;
+              height: 42px;
+              display: block;
+              text-align: center;
+              vertical-align: middle;
+              border: 1px solid red;
+              @include border-radius(42px);
+              position: relative;
+              i {
+                  vertical-align: middle;
+                  position: relative;
+              }
+          }*/
+}
+
+/* line 129, ../../sass/partials/_header.scss */
+.logo-league {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2100;
+}
+/* line 134, ../../sass/partials/_header.scss */
+.logo-league img {
+  width: 60px;
+  height: auto;
+  vertical-align: middle;
+  margin: 0 5px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 142, ../../sass/partials/_header.scss */
+.logo-league img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* line 148, ../../sass/partials/_header.scss */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans';
+  padding-top: 60px;
+}
+/* line 160, ../../sass/partials/_header.scss */
+.scroll-down span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+/* line 170, ../../sass/partials/_header.scss */
+.scroll-down span:before {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+/* line 184, ../../sass/partials/_header.scss */
+.scroll-down:hover {
+  opacity: .5;
+}
+/* line 186, ../../sass/partials/_header.scss */
+.scroll-down:hover span:before {
+  top: auto;
+  bottom: 10px;
+}
+
+/* line 2, ../../sass/partials/_sections.scss */
+section,
+.section {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 10, ../../sass/partials/_sections.scss */
+#section0 {
+  background-image: url(../images/e_background_4.png);
+}
+
+/* line 14, ../../sass/partials/_sections.scss */
+#section1 {
+  background-image: url(../images/squad.png);
+}
+
+/* line 18, ../../sass/partials/_sections.scss */
+#section2 {
+  background-image: url(../images/1.jpg);
+}
+
+/* line 23, ../../sass/partials/_sections.scss */
+#section3 {
+  background-image: url(../images/3.jpg);
+}
+
+/* line 27, ../../sass/partials/_sections.scss */
+#section4 {
+  background-image: url(../images/4.jpg);
+}
+
+/* line 31, ../../sass/partials/_sections.scss */
+#section5 {
+  background-image: url(../images/5.jpg);
+}
+
+/* line 35, ../../sass/partials/_sections.scss */
+.info {
+  width: 50%;
+  float: right;
+  padding: 80px;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  font-size: 22px;
+  background: rgba(21, 21, 21, 0.9);
+}
+/* line 44, ../../sass/partials/_sections.scss */
+.info div {
+  /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
+  padding-bottom: 15px;
+}
+
+/* line 9, ../../sass/screen.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../../sass/screen.scss */
+body,
+html {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 22, ../../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 26, ../../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 30, ../../sass/screen.scss */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: white;
+}
+
+/* line 35, ../../sass/screen.scss */
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+/* line 38, ../../sass/screen.scss */
+a:hover {
+  color: black;
+}
