@@ -21,6 +21,32 @@ h1, h2, h3, h4, h5, h6 {
   /*font-family: $fontAlt;*/
 }
 
+/* line 1, ../../sass/partials/_logoLoader.scss */
+#logo-loader {
+  width: 100%;
+  height: 100%;
+  z-index: 2500;
+  background: #231F20;
+  position: fixed;
+  display: block;
+}
+/* line 8, ../../sass/partials/_logoLoader.scss */
+#logo-loader #logo-wrapper {
+  position: absolute;
+  margin-left: 0;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  display: block;
+}
+/* line 17, ../../sass/partials/_logoLoader.scss */
+#logo-loader #logo-wrapper #logo {
+  width: 100%;
+  height: auto;
+}
+
 /*!
  * fullPage 2.8.1
  * https://github.com/alvarotrigo/fullPage.js
@@ -416,48 +442,48 @@ html.fp-enabled,
 /* line 75, ../../sass/partials/_navigation.scss */
 nav#sidebar {
   position: fixed;
-  height: 100%;
-  width: 150px;
-  top: 0;
-  background-color: #212121;
+  background: #212121;
+  background: -moz-linear-gradient(top, #212121 0%, #0f0f0f 100%);
+  background: -webkit-linear-gradient(top, #212121 0%, #0f0f0f 100%);
+  background: linear-gradient(to bottom, #212121 0%, #0f0f0f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#0f0f0f',GradientType=0 );
   z-index: 1200;
   overflow-y: scroll;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  left: -14.8%;
   height: 100%;
-  width: 15.5%;
-  right: 84.5%;
+  width: 360px;
+  left: -350px;
+  top: 0;
   overflow: hidden;
 }
-/* line 90, ../../sass/partials/_navigation.scss */
+/* line 92, ../../sass/partials/_navigation.scss */
 nav#sidebar.open {
   left: 0;
 }
-/* line 93, ../../sass/partials/_navigation.scss */
+/* line 95, ../../sass/partials/_navigation.scss */
 nav#sidebar .sidebar-logo {
   display: block;
   text-align: center;
-  padding: 13px 0 10px;
-  text-align: right;
-  padding: 4em 2em 4em 0;
+  padding: 15px 0 15px 20px;
+  text-align: center;
 }
-/* line 100, ../../sass/partials/_navigation.scss */
+/* line 101, ../../sass/partials/_navigation.scss */
 nav#sidebar .sidebar-logo svg {
   width: 30px;
   height: 30px;
   width: 70px;
   height: 70px;
 }
-/* line 108, ../../sass/partials/_navigation.scss */
+/* line 109, ../../sass/partials/_navigation.scss */
 nav#sidebar ul {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #272727;
 }
-/* line 112, ../../sass/partials/_navigation.scss */
+/* line 113, ../../sass/partials/_navigation.scss */
 nav#sidebar ul li {
   list-style: none;
   display: block;
@@ -466,7 +492,7 @@ nav#sidebar ul li {
   border-top: 1px solid #272727;
   position: relative;
 }
-/* line 119, ../../sass/partials/_navigation.scss */
+/* line 120, ../../sass/partials/_navigation.scss */
 nav#sidebar ul li a {
   display: block;
   padding: 1em 0 .8em 20px;
@@ -484,7 +510,7 @@ nav#sidebar ul li a {
   padding: 1.2em 2em 1em 0;
   text-align: right;
 }
-/* line 137, ../../sass/partials/_navigation.scss */
+/* line 138, ../../sass/partials/_navigation.scss */
 nav#sidebar ul li.active {
   border-right: 10px solid #71100d;
 }
@@ -509,11 +535,7 @@ header {
 @media only screen and (max-width: 767px) {
   /* line 1, ../../sass/partials/_header.scss */
   header {
-    width: 300px;
-    height: 200px;
     padding: 0;
-    margin-top: -100px;
-    margin-left: -150px;
   }
   /* line 22, ../../sass/partials/_header.scss */
   header h1 {
@@ -596,31 +618,16 @@ header nav a:hover:before {
 /* line 108, ../../sass/partials/_header.scss */
 .share li {
   display: inline-block;
-  /*        a {
-              font-size: 16px;
-              width: 42px;
-              height: 42px;
-              display: block;
-              text-align: center;
-              vertical-align: middle;
-              border: 1px solid red;
-              @include border-radius(42px);
-              position: relative;
-              i {
-                  vertical-align: middle;
-                  position: relative;
-              }
-          }*/
 }
 
-/* line 129, ../../sass/partials/_header.scss */
+/* line 114, ../../sass/partials/_header.scss */
 .logo-league {
   position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 2100;
 }
-/* line 134, ../../sass/partials/_header.scss */
+/* line 119, ../../sass/partials/_header.scss */
 .logo-league img {
   width: 60px;
   height: auto;
@@ -636,7 +643,7 @@ header nav a:hover:before {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 142, ../../sass/partials/_header.scss */
+/* line 127, ../../sass/partials/_header.scss */
 .logo-league img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -645,39 +652,46 @@ header nav a:hover:before {
   filter: grayscale(0%);
 }
 
-/* line 148, ../../sass/partials/_header.scss */
+/* line 133, ../../sass/partials/_header.scss */
 .scroll-down {
   position: absolute;
-  bottom: 20px;
+  bottom: 0;
   left: 50%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font: normal 400 20px/1 'Josefin Sans';
-  padding-top: 60px;
-}
-/* line 160, ../../sass/partials/_header.scss */
-.scroll-down span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-/* line 170, ../../sass/partials/_header.scss */
-.scroll-down span:before {
+  font: normal 400 20px/1;
+  font-family: 'Ubuntu';
+  padding-top: 10px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+/* line 147, ../../sass/partials/_header.scss */
+.scroll-down span {
   position: absolute;
-  top: 10px;
+  bottom: 30px;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+}
+/* line 159, ../../sass/partials/_header.scss */
+.scroll-down span:before {
+  position: absolute;
+  bottom: 65%;
   left: 50%;
   content: '';
   width: 6px;
@@ -686,15 +700,77 @@ header nav a:hover:before {
   background-color: #fff;
   border-radius: 100%;
   box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  box-shadow: 0px 0px 5px black;
 }
-/* line 184, ../../sass/partials/_header.scss */
+/* line 174, ../../sass/partials/_header.scss */
 .scroll-down:hover {
   opacity: .5;
 }
-/* line 186, ../../sass/partials/_header.scss */
+/* line 176, ../../sass/partials/_header.scss */
 .scroll-down:hover span:before {
-  top: auto;
-  bottom: 10px;
+  bottom: 25%;
+}
+
+/* line 3, ../../sass/partials/_socials.scss */
+.hb-facebook-inv, .hb-facebook-inv:after, .hb-facebook-inv:before,
+.hb-youtube-inv, .hb-youtube-inv:after, .hb-youtube-inv:before,
+.hb-instagram-inv, .hb-instagram-inv:after, .hb-instagram-inv:before {
+  background: white;
+  text-shadow: 0 0 0;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 8, ../../sass/partials/_socials.scss */
+.hb-facebook-inv i {
+  color: #3B5998;
+}
+
+/* line 11, ../../sass/partials/_socials.scss */
+.hb-youtube-inv i {
+  color: #cc181e;
+}
+
+/* line 14, ../../sass/partials/_socials.scss */
+.hb-instagram-inv i {
+  color: #3f729b;
+}
+
+/* line 22, ../../sass/partials/_socials.scss */
+.share .hb-instagram-inv,
+.share .hb-instagram-inv:after,
+.share .hb-instagram-inv:before {
+  border-color: #3f729b;
+  color: #3f729b;
+}
+/* line 28, ../../sass/partials/_socials.scss */
+.share .hb-instagram-inv:hover,
+.share .hb-instagram-inv:hover:after,
+.share .hb-instagram-inv:hover:before {
+  background: #3f729b;
+  border-color: #3f729b;
+  color: #fff;
+}
+/* line 36, ../../sass/partials/_socials.scss */
+.share .hb:hover i {
+  color: white;
+}
+/* line 40, ../../sass/partials/_socials.scss */
+.share .hb i {
+  padding-left: 4px;
+  padding-bottom: 13px;
+  vertical-align: middle;
+  font-size: smaller;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
 }
 
 /* line 2, ../../sass/partials/_sections.scss */
@@ -754,7 +830,7 @@ section,
   padding-bottom: 15px;
 }
 
-/* line 9, ../../sass/screen.scss */
+/* line 11, ../../sass/screen.scss */
 *,
 *:after,
 *:before {
@@ -763,7 +839,7 @@ section,
   box-sizing: border-box;
 }
 
-/* line 15, ../../sass/screen.scss */
+/* line 17, ../../sass/screen.scss */
 body,
 html {
   font-size: 100%;
@@ -771,30 +847,30 @@ html {
   margin: 0;
 }
 
-/* line 22, ../../sass/screen.scss */
+/* line 24, ../../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 26, ../../sass/screen.scss */
+/* line 28, ../../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 30, ../../sass/screen.scss */
+/* line 32, ../../sass/screen.scss */
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   color: white;
 }
 
-/* line 35, ../../sass/screen.scss */
+/* line 37, ../../sass/screen.scss */
 a {
   color: #f0f0f0;
   text-decoration: none;
 }
-/* line 38, ../../sass/screen.scss */
+/* line 40, ../../sass/screen.scss */
 a:hover {
   color: black;
 }

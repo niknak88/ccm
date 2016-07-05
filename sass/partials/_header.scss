@@ -14,11 +14,11 @@ header {
         }
     }
     @media only screen and (max-width: 767px) {
-        width: 300px;
-        height: 200px;
+        //width: 300px;
+        //height: 200px;
         padding: 0;
-        margin-top: -100px;
-        margin-left: -150px;        
+        //margin-top: -100px;
+        //margin-left: -150px;
         h1 {
             font-size: 2.6em
         }
@@ -107,21 +107,6 @@ header {
     margin: 20px auto;
     li {
         display: inline-block;
-/*        a {
-            font-size: 16px;
-            width: 42px;
-            height: 42px;
-            display: block;
-            text-align: center;
-            vertical-align: middle;
-            border: 1px solid red;
-            @include border-radius(42px);
-            position: relative;
-            i {
-                vertical-align: middle;
-                position: relative;
-            }
-        }*/
     }
 }
 
@@ -147,30 +132,33 @@ header {
 } 
 .scroll-down {
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     color: #fff;
-    font : normal 400 20px/1 'Josefin Sans';
-        padding-top: 60px;
-
+    font : normal 400 20px/1;
+    font-family: 'Ubuntu';
+    padding-top: 10px;
+    @include single-transition(all, 0.2s, ease-in-out);
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
     span {
         position: absolute;
-        top: 0;
+        bottom: 30px;
         left: 50%;
         width: 30px;
         height: 50px;
         margin-left: -15px;
-        border: 2px solid #fff;
+        border: 3px solid #fff;
         border-radius: 50px;
         box-sizing: border-box;
+        @include single-transition(all, 0.2s, ease-in-out);
+        box-shadow: 0px 0px 5px black;
         &:before {
-            @include single-transition(all, .2s, ease-in-out);
             position: absolute;
-            top: 10px;
+            bottom: 65%;
             left: 50%;
             content: '';
             width: 6px;
@@ -179,13 +167,14 @@ header {
             background-color: #fff;
             border-radius: 100%;
             box-sizing: border-box;
+            @include single-transition(all, 0.3s, ease-in);
+            box-shadow: 0px 0px 5px black;
         }
     }
     &:hover{
         opacity: .5;
         span:before {
-            top: auto;
-            bottom: 10px;
+            bottom: 25%;
         }
     }
 }

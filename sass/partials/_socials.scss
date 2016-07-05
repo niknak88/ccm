@@ -1,0 +1,48 @@
+.hb-facebook-inv, .hb-facebook-inv:after, .hb-facebook-inv:before,
+.hb-youtube-inv, .hb-youtube-inv:after, .hb-youtube-inv:before,
+.hb-instagram-inv, .hb-instagram-inv:after, .hb-instagram-inv:before {
+  background: white;
+  @include text-shadow(0 0 0);
+  @include transition-duration(0.5s);
+}
+.hb-facebook-inv i {
+  color: #3B5998;
+}
+.hb-youtube-inv i {
+  color: #cc181e;
+}
+.hb-instagram-inv i {
+  color: #3f729b;
+}
+// add color for instagram hexagons button social media
+.share {
+
+  .hb-instagram-inv,
+  .hb-instagram-inv:after,
+  .hb-instagram-inv:before {
+    border-color: #3f729b;
+    color: #3f729b;
+  }
+  .hb-instagram-inv:hover,
+  .hb-instagram-inv:hover:after,
+  .hb-instagram-inv:hover:before {
+    background: #3f729b;
+    border-color: #3f729b;
+    color: #fff;
+  }
+
+  .hb {
+    &:hover {
+      i {
+        color: white;
+      }
+    }
+    i {
+      padding-left: 4px;
+      padding-bottom: 13px;
+      vertical-align: middle;
+      font-size: smaller;
+      @include transition-duration(0.25s);
+    }
+  }
+}
