@@ -1,5 +1,6 @@
 section,
-.section {
+.section
+.slide {
     position: relative;
     background-position: top center;
     background-repeat: no-repeat;
@@ -17,7 +18,6 @@ section,
 
 #section2 {
     background-image: url(../images/1.jpg);
-
 }
 
 #section3 {
@@ -32,7 +32,7 @@ section,
     background-image: url(../images/5.jpg);
 }
 
-.info {
+.half-large {
     width: 50%;
     float: right;
     padding: 80px;

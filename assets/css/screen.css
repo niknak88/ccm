@@ -15,6 +15,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 33, ../../sass/partials/_base.scss */
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+/* line 37, ../../sass/partials/_base.scss */
 * {
   font-family: 'Ubuntu';
   /*font-family: $fontAlt;*/
@@ -486,8 +492,9 @@ nav#sidebar ul li {
   padding: 0;
   border-top: 1px solid #272727;
   position: relative;
+  margin-right: 10px;
 }
-/* line 120, ../../sass/partials/_navigation.scss */
+/* line 121, ../../sass/partials/_navigation.scss */
 nav#sidebar ul li a {
   display: block;
   padding: 1em 0 .8em 20px;
@@ -497,17 +504,17 @@ nav#sidebar ul li a {
   color: #aaa;
   text-decoration: none;
   font-weight: 200 !important;
-  /*                font-family: din-light,sans-serif;
-                  font-family: "Helvetica Neue",helvetica,sans-serif;*/
   text-transform: uppercase;
   -webkit-transition: all .15s;
   transition: all .15s;
   padding: 1.2em 2em 1em 0;
   text-align: right;
+  letter-spacing: 3px;
 }
 /* line 138, ../../sass/partials/_navigation.scss */
 nav#sidebar ul li.active {
   border-right: 10px solid #71110d;
+  margin-right: 0px;
 }
 
 /* line 1, ../../sass/partials/_header.scss */
@@ -768,7 +775,8 @@ header nav a:hover:before {
 
 /* line 1, ../../sass/partials/_sections.scss */
 section,
-.section {
+.section
+.slide {
   position: relative;
   background-position: top center;
   background-repeat: no-repeat;
@@ -776,17 +784,17 @@ section,
   background-attachment: fixed;
 }
 
-/* line 10, ../../sass/partials/_sections.scss */
+/* line 11, ../../sass/partials/_sections.scss */
 #section0 {
   background-image: url(../images/e_background_4.png);
 }
 
-/* line 14, ../../sass/partials/_sections.scss */
+/* line 15, ../../sass/partials/_sections.scss */
 #section1 {
   background-image: url(../images/squad.png);
 }
 
-/* line 18, ../../sass/partials/_sections.scss */
+/* line 19, ../../sass/partials/_sections.scss */
 #section2 {
   background-image: url(../images/1.jpg);
 }
@@ -807,7 +815,7 @@ section,
 }
 
 /* line 35, ../../sass/partials/_sections.scss */
-.info {
+.half-large {
   width: 50%;
   float: right;
   padding: 80px;
@@ -818,7 +826,7 @@ section,
   background: rgba(21, 21, 21, 0.9);
 }
 /* line 44, ../../sass/partials/_sections.scss */
-.info div {
+.half-large div {
   /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
   padding-bottom: 15px;
 }
