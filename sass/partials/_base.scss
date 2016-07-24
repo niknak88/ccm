@@ -1,40 +1,8 @@
 @import "compass/css3";
 
-@import url(https://fonts.googleapis.com/css?family=Graduate);
-@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@font-face {
-	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome.eot');
-	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('../fonts/fontawesome.woff') format('woff'),
-		url('../fonts/fontawesome.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-$fontHead: 'Graduate', cursive;
-$fontText: 'Ropa Sans', sans-serif;
-$fontAlt: 'Lato', sans-serif;
-
 $redCM : #E2211A;
 $mainTextColor : #fff;
 $linkColor : #f0f0f0;
 $linkHoverColor : #000;
 
 $bullet : #47a3da;
-
-
-h1, h2, h3, h4, h5, h6{
-    font-family: $fontHead;
-}
-h1 {
-	font-size: 2em;
-	margin-top: 0;
-}
-*{
-    font-family: 'Ubuntu';
-    /*font-family: $fontAlt;*/
-}
