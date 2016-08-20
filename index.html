@@ -3,23 +3,26 @@
 <!--<html xmlns="http://www.w3.org/1999/xhtml">-->
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<meta name="Resource-type" content="Document" />-->
     <title>Charleroi Coal Miners Football américain & flag en Belgique</title>
 
-    <link rel="stylesheet" href="assets/css/hexagons.min.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo.min.js"></script>
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo-nojquery.min.js"></script>-->
-    <script type="text/javascript" src="assets/js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="assets/js/hexagons.min.js"></script>
-    <script type="text/javascript" src="assets/js/CCM.js"></script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Materialize style-->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!--Fullpage style-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css" rel="stylesheet" media="screen,projection"/>
+    <!--Scrollbar style-->
+    <link href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="screen,projection"/>
+    <!--Hexa share button style-->
+    <link href="assets/css/hexagons.min.css" rel="stylesheet"/>
+    <!--Font awesomwe style-->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--Custom style-->    
+    <link href="assets/css/screen.css" rel="stylesheet"/>
 </head>
 <body>
 <div id="logo-loader">
@@ -34,16 +37,32 @@
     <span></span>
 </div>
 <nav id="sidebar">
-    <div class="logo-wrap">
-        <a href="/" class="sidebar-logo active">
-            <img src="assets/images/logo-test4.png" alt="">
-        </a>
-    </div>
-    <ul id="menu">
-        <li data-menuanchor="section01" class="active"><a href="#section01">First section</a></li>
-        <li data-menuanchor="section11"><a href="#section11">Second section</a></li>
-        <li data-menuanchor="section21"><a href="#section21">Third section</a></li>
-        <li data-menuanchor="section31"><a href="#section31">Fourth section</a></li>
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="logo-wrap">
+                <a href="/" class="sidebar-logo active">
+                    <img src="assets/images/logo-test4.png" alt="">
+                </a>
+            </div>
+        </li>
+        <li data-menuanchor="section01" class="active">
+          <a class="waves-effect active" href="#section01">Home</a>
+        </li>
+        <li data-menuanchor="section11">
+          <a class="waves-effect" href="#section11">Story of success</a>
+        </li>
+        <li data-menuanchor="section21">
+          <a class="waves-effect" href="#section21">Scheduler</a>
+        </li>
+        <li data-menuanchor="section31">
+          <a class="waves-effect" href="#section31">Rooster</a>
+        </li>
+        <li data-menuanchor="section41">
+          <a class="waves-effect" href="#section41">Try out / training</a>
+        </li>
+        <li data-menuanchor="section51">
+          <a class="waves-effect" href="#section51">Contact</a>
+        </li>
     </ul>
 </nav>
 <div id="fullpage">
@@ -109,6 +128,24 @@
     <section class="section" id="section3"><h1>One Image = One thousand words</h1></section>
 </div>
 
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+    <!--Fullpage-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.js"></script>
+    <!--Scrollbar-->
+    <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--Loadgo-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo.min.js"></script>
+    <!--Detect change attributes-->
+    <script src="js/attrchange.js"></script>
+    <script src="js/attrchange_ext.js"></script>
+    <!--Materialize framework-->
+    <script src="js/materialize.min.js"></script>
+    <!--Hexagon share button script-->
+    <script type="text/javascript" src="assets/js/hexagons.min.js"></script>
+    <!--Custom JS-->
+    <script type="text/javascript" src="assets/js/CCM.js"></script>
 
 </body>
 </html>

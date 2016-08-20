@@ -7,7 +7,7 @@ $(document).ready(function () {
         css3: false,
         afterRender: function(){
             $('#logo').loadgo({
-                'opacity':    0.8,
+                'opacity':    1,
                 'animated':   true,
                 'bgcolor':    '#231F20',
                 'direction': 'lr',
