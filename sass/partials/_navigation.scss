@@ -7,7 +7,7 @@
     z-index: 2000;
     margin: 50px;
     @include rotate(0deg);
-    @include single-transition(all, .3s, ease-in-out);
+    @include single-transition(all, .2s, ease-in-out);
     cursor: pointer;
     @media (max-width: 991px) {
         width: 50px;
@@ -72,26 +72,26 @@
 }
 
 
-nav#sidebar {
-    position: fixed;
+.side-nav {
+    //position: fixed;
     background: #212121;
     background: -moz-linear-gradient(top, #212121 0%, #0f0f0f 100%);
     background: -webkit-linear-gradient(top, #212121 0%,#0f0f0f 100%);
     background: linear-gradient(to bottom, #212121 0%,#0f0f0f 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#0f0f0f',GradientType=0 );
 
-    z-index: 1200;
-    overflow-y: scroll;
-    @include single-transition(all, .3s, ease-in-out);
+    //z-index: 1200;
+    //overflow-y: scroll;
+    //@include single-transition(all, .3s, ease-in-out);
     //for large screen
-    height: 100%;
-    width: 360px;
-    left: -350px;
-    top: 0;
-    overflow: hidden;
-    &.open {
-        left: 0;
-    }
+    //height: 100%;
+    //width: 360px;
+    //left: -350px;
+    //top: 0;
+    //overflow: hidden;
+    //&.open {
+    //    left: 0;
+    //}
     .sidebar-logo {
         display: block;
         text-align: center;
@@ -106,11 +106,14 @@ nav#sidebar {
             height: 70px;
         }
     }
-    ul {
+    //ul {
         margin: 0;
         padding: 0;
         border-bottom: 1px solid #272727;
         li{
+            &.logo {
+                height: 250px;
+            }
             list-style: none;
             display: block;
             margin: 0;
@@ -119,10 +122,7 @@ nav#sidebar {
             position: relative;
             a{
                 display: block;
-                padding: 1em 0 .8em 20px;
-                position: relative;
                 z-index: 5;
-                text-align: left;
                 color: #aaa;
                 text-decoration: none;
                 font-weight: 200!important;
@@ -132,12 +132,12 @@ nav#sidebar {
                 -webkit-transition: all .15s;
                 transition: all .15s;
                 //for large screen
-                padding: 1.2em 2em 1em 0;
+                //padding: 1.2em 2em 1em 0;
                 text-align: right;
             }
             &.active {
                 border-right: 10px solid shade($redCM, 50%);
             }
         }
-    }
+   //}
 }
