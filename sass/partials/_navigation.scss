@@ -7,7 +7,6 @@
     z-index: 2000;
     margin: 50px;
     @include rotate(0deg);
-    @include single-transition(all, .2s, ease-in-out);
     cursor: pointer;
     @media (max-width: 991px) {
         width: 50px;
@@ -120,6 +119,8 @@
             padding: 0;
             border-top: 1px solid #272727;
             position: relative;
+            border-right: 10px solid transparent;
+            @include single-transition(all, .25s, ease-in-out);
             a{
                 display: block;
                 z-index: 5;

@@ -110,6 +110,25 @@ header {
     }
 }
 
+.logo-main-sponsor {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 501;
+    img{
+        width: 60px;
+        height: auto;
+        vertical-align: middle;
+        margin: 0 5px;
+        @include opacity(0.8);
+        @include filter(grayscale(100%));
+        @include single-transition(all, .2s, ease-in-out);
+        &:hover{
+            @include opacity(1);
+            @include filter(grayscale(0%));
+        }
+    }
+}
 
 .logo-league{
     position: absolute;
@@ -130,51 +149,3 @@ header {
         }
     }  
 } 
-.scroll-down {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: #fff;
-    font : normal 400 20px/1;
-    font-family: 'Ubuntu';
-    padding-top: 10px;
-    @include single-transition(all, 0.2s, ease-in-out);
-    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
-    span {
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        width: 30px;
-        height: 50px;
-        margin-left: -15px;
-        border: 3px solid #fff;
-        border-radius: 50px;
-        box-sizing: border-box;
-        @include single-transition(all, 0.2s, ease-in-out);
-        box-shadow: 0px 0px 5px black;
-        &:before {
-            position: absolute;
-            bottom: 65%;
-            left: 50%;
-            content: '';
-            width: 6px;
-            height: 6px;
-            margin-left: -3px;
-            background-color: #fff;
-            border-radius: 100%;
-            box-sizing: border-box;
-            @include single-transition(all, 0.3s, ease-in);
-            box-shadow: 0px 0px 5px black;
-        }
-    }
-    &:hover{
-        opacity: .5;
-        span:before {
-            bottom: 25%;
-        }
-    }
-}

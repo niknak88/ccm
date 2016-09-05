@@ -37,49 +37,44 @@ $(document).ready(function () {
         //     }, 300);
         // }
     });
-    
+
     // Button for show and hide sidebar menu.
     $('#nav-icon3').sideNav();
     var eventCount = 0; //event counter
     $('#slide-out').attrchange({
-      trackValues: true,
-      /* enables tracking old and new values */
-      callback: function(e) { //callback handler on DOM changes  
-        var transform = $(this).css('transform').split(',')[4];
-        if(transform > -50) {
-            console.log('okokokok');
-          $(this).css('left', '0');
-          $('#nav-icon3').css('left', $(this).width()).addClass('open');
-        } else {
-          $(this).css('left', '6px');
-          $('#nav-icon3').css('left', '').removeClass('open');
-        } //show the method used for detecting DOM changes // transform: translateX(0px);
-      }
-    }).css('left', '6px');
+        trackValues: true,
+        /* enables tracking old and new values */
+        callback: function (e) { //callback handler on DOM changes
+            var transform = $(this).css('transform').split(',')[4];
+            console.log(transform);
+            if (transform > -50) {
+                //ouvert
+                $(this).css('left', '0');
+                $('#nav-icon3').addClass('open');
+            } else {
+                // fermé
+                $(this).css('left', '6px');
+                $('#nav-icon3').removeClass('open');
+            }
+            $('#nav-icon3').css('left', parseInt(transform)+300);
+        }
+    }).css('left', '6px').find('li').not('first').find('a').click(function(){
+        $(this).closest('ul').find('.active').removeClass('active');
+        $(this).addClass('active').parent().addClass('active');
+    });
     $('#nav-icon3').css('left', '').removeClass('open');
-    // $('#nav-icon3').click(function(e){
-    //     e.preventDefault();
-    //     console.log('okok');
-    //     if($(this).hasClass('open')) {
-    //         $('#nav-icon3').sideNav('hide');
-    //         $(this).css('left', '').removeClass('open');
-    //     }
-    //     else {
-    //         $('#nav-icon3').sideNav('show');
-    //         $(this).css('left', $('#slide-out').width()).addClass('open');
-    //     }
-    // });
+
 
     // scrollbar inside content per section
-    $(window).on("load",function(){
-            $(".half-large").mCustomScrollbar({
-              axis: 'y',
-              setTop: 50,
-              setHeight: $(window).height(),
-              autoHideScrollbar: true,
-              alwaysShowScrollbar: 1,
-              mouseWheel: {enable: true},
-              theme: 'dark',
-            });
+    $(window).on("load", function () {
+        $(".half-large").mCustomScrollbar({
+            axis: 'y',
+            setTop: 50,
+            setHeight: $(window).height(),
+            autoHideScrollbar: true,
+            alwaysShowScrollbar: 1,
+            mouseWheel: {enable: true},
+            theme: 'dark',
         });
+    });
 });
