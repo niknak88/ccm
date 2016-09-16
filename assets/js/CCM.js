@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         verticalCentered: false,
         menu: '#menu',
-        anchors: ['section01', 'section11', 'section21', 'section31'],
+        anchors: ['section01', 'section11', 'section21', 'section31', 'section41', 'section51'],
         css3: false,
         onLeave: function(index, nextIndex, direction) {
             $('#slide-out').find('.active').removeClass('active');
