@@ -732,7 +732,7 @@ header nav a:hover:before {
   margin-left: -50px;
   z-index: 2;
   height: 100px;
-  width: 100px;
+  width: 70px;
   display: block;
   overflow: hidden;
 }
@@ -741,19 +741,15 @@ header nav a:hover:before {
   color: white;
 }
 /* line 14, ../../sass/partials/_scrollDown.scss */
-.scroll-down:hover .scroll-down-title span,
-.scroll-down:hover .scroll-down-streak {
-  -webkit-animation-play-state: paused;
-}
-/* line 18, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-title {
   margin: auto;
   display: block;
   text-align: center;
   height: 25px;
+  width: 70px;
   overflow: hidden;
 }
-/* line 24, ../../sass/partials/_scrollDown.scss */
+/* line 21, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-title span {
   text-shadow: -1px -1px 0 rgba(21, 21, 21, 0.9), 1px -1px 0 rgba(21, 21, 21, 0.9), -1px 1px 0 rgba(21, 21, 21, 0.9), 1px 1px 0 rgba(21, 21, 21, 0.9), 0 0px 10px black;
   font-weight: 700;
@@ -761,53 +757,46 @@ header nav a:hover:before {
   font-size: 16px;
   letter-spacing: 1px;
   display: block;
-  animation: animate_text 2.5s 0.42s infinite cubic-bezier(0.42, 0, 1, 1) normal;
+  transform: translateY(-100%);
 }
-/* line 35, ../../sass/partials/_scrollDown.scss */
+/* line 32, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-streak {
-  width: 3px;
-  background: #71100d;
-  height: 10px;
   position: relative;
   margin: auto;
-  animation: animate_streak 2.5s 0.42s infinite cubic-bezier(0.42, 0, 1, 1) normal;
+  display: block;
+  width: 60px;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+/* line 40, ../../sass/partials/_scrollDown.scss */
+.scroll-down .scroll-down-streak span {
+  width: 2px;
+  background: #71100d;
+  position: relative;
+  margin: auto;
+  height: 100px;
+  display: block;
+  margin-top: -100px;
 }
 
-@keyframes animate_text {
-  /* line 46, ../../sass/partials/_scrollDown.scss */
-  0% {
-    transform: translateY(-100%);
-  }
-
-  /* line 49, ../../sass/partials/_scrollDown.scss */
-  20%, 60% {
-    transform: translateY(0%);
-  }
-
-  /* line 52, ../../sass/partials/_scrollDown.scss */
-  75%, 100% {
-    transform: translateY(150%);
-  }
+/* line 52, ../../sass/partials/_scrollDown.scss */
+.hover-animation-text {
+  margin: 0;
+  padding: 0;
+  transform: translateY(0%);
 }
-
-@keyframes animate_streak {
-  /* line 57, ../../sass/partials/_scrollDown.scss */
-  0%, 20% {
-    height: 0px;
-    margin-top: 0;
-  }
-
-  /* line 61, ../../sass/partials/_scrollDown.scss */
-  40%, 50% {
-    height: 100px;
-    margin-top: 0;
-  }
-
-  /* line 65, ../../sass/partials/_scrollDown.scss */
-  100% {
-    margin-top: 100px;
-    height: 100px;
-  }
+/* line 56, ../../sass/partials/_scrollDown.scss */
+.hover-animation-text li {
+  line-height: 25px;
+  margin: 0;
+  height: 25px;
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* line 2, ../../sass/partials/_sections.scss */

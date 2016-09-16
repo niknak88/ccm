@@ -5,6 +5,10 @@ $(document).ready(function () {
         menu: '#menu',
         anchors: ['section01', 'section11', 'section21', 'section31'],
         css3: false,
+        onLeave: function(index, nextIndex, direction) {
+            $('#slide-out').find('.active').removeClass('active');
+            $('#slide-out li').eq(nextIndex).addClass('active').find('a').addClass('active');
+        },
         // afterRender: function(){
         //     $('#logo').loadgo({
         //         'opacity':    1,
@@ -46,7 +50,6 @@ $(document).ready(function () {
         /* enables tracking old and new values */
         callback: function (e) { //callback handler on DOM changes
             var transform = $(this).css('transform').split(',')[4];
-            console.log(transform);
             if (transform > -50) {
                 //ouvert
                 $(this).css('left', '0');
@@ -58,12 +61,12 @@ $(document).ready(function () {
             }
             $('#nav-icon3').css('left', parseInt(transform)+300);
         }
-    }).css('left', '6px').find('li').not('first').find('a').click(function(){
+    }).css('left', '6px')
+        /*.find('li').not('first').find('a').click(function(){
         $(this).closest('ul').find('.active').removeClass('active');
         $(this).addClass('active').parent().addClass('active');
-    });
+    });*/
     $('#nav-icon3').css('left', '').removeClass('open');
-
 
     // scrollbar inside content per section
     $(window).on("load", function () {

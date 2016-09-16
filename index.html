@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/html">
 <!--<html xmlns="http://www.w3.org/1999/xhtml">-->
 
 <head>
@@ -23,6 +23,8 @@
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
     <!--Custom style-->    
     <link href="assets/css/screen.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
 </head>
 <body>
 <!-- <div id="logo-loader">
@@ -101,8 +103,17 @@
             </a>
         </div>
         <a href="#section11" class="scroll-down">
-            <div class="scroll-down-title"><span>Discover</span></div>
-            <div class="scroll-down-streak"></div>
+            <div class="scroll-down-title">
+                <span>Discover</span>
+                <ul class="hover-animation-text">
+                    <li>Down</li>
+                    <li>Set</li>
+                    <li>Hut</li>
+                </ul>
+            </div>
+            <div class="scroll-down-streak">
+                <span>&nbsp;</span>
+            </div>
         </a>
         <div class="logo-league">
             <a href="http://www.bafl.be">
@@ -136,16 +147,16 @@
     </section>
     <section class="section" id="section3"><h1>One Image = One thousand words</h1></section>
 </div>
-
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
     <!--Fullpage-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.js"></script>
     <!--Scrollbar-->
     <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <!--Loadgo-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo.min.js"></script>
+    <!--TweenMax animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <!--Detect change attributes-->
     <script src="assets/js/attrchange.js"></script>
     <script src="assets/js/attrchange_ext.js"></script>
@@ -154,7 +165,7 @@
     <!--Hexagon share button script-->
     <script src="assets/js/hexagons.min.js"></script>
     <!--Custom JS-->
+    <script src="assets/js/page-down.js"></script>
     <script src="assets/js/CCM.js"></script>
-
 </body>
 </html>
