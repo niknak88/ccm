@@ -61,11 +61,7 @@ $(document).ready(function () {
             }
             $('#nav-icon3').css('left', parseInt(transform)+300);
         }
-    }).css('left', '6px')
-        /*.find('li').not('first').find('a').click(function(){
-        $(this).closest('ul').find('.active').removeClass('active');
-        $(this).addClass('active').parent().addClass('active');
-    });*/
+    }).css('left', '6px');
     $('#nav-icon3').css('left', '').removeClass('open');
 
     // scrollbar inside content per section
@@ -77,7 +73,7 @@ $(document).ready(function () {
             autoHideScrollbar: true,
             alwaysShowScrollbar: 1,
             mouseWheel: {enable: true},
-            theme: 'dark',
+            //theme: 'dark',
         });
     });
 });

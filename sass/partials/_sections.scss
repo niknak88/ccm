@@ -5,6 +5,10 @@ section,
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 0;
+    &.half-large .mCSB_container {
+      margin-right: 0;
+    }
 }
 
 #section0 {

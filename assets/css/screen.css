@@ -807,39 +807,45 @@ section,
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding: 0;
+}
+/* line 9, ../../sass/partials/_sections.scss */
+section.half-large .mCSB_container,
+.section.half-large .mCSB_container {
+  margin-right: 0;
 }
 
-/* line 10, ../../sass/partials/_sections.scss */
+/* line 14, ../../sass/partials/_sections.scss */
 #section0 {
   background-image: url(../images/e_background_4.png);
 }
 
-/* line 14, ../../sass/partials/_sections.scss */
+/* line 18, ../../sass/partials/_sections.scss */
 #section1 {
   background-image: url(../images/squad.png);
 }
 
-/* line 18, ../../sass/partials/_sections.scss */
+/* line 22, ../../sass/partials/_sections.scss */
 #section2 {
   background-image: url(../images/1.jpg);
 }
 
-/* line 23, ../../sass/partials/_sections.scss */
+/* line 27, ../../sass/partials/_sections.scss */
 #section3 {
   background-image: url(../images/3.jpg);
 }
 
-/* line 27, ../../sass/partials/_sections.scss */
+/* line 31, ../../sass/partials/_sections.scss */
 #section4 {
   background-image: url(../images/4.jpg);
 }
 
-/* line 31, ../../sass/partials/_sections.scss */
+/* line 35, ../../sass/partials/_sections.scss */
 #section5 {
   background-image: url(../images/5.jpg);
 }
 
-/* line 35, ../../sass/partials/_sections.scss */
+/* line 39, ../../sass/partials/_sections.scss */
 .info {
   width: 50%;
   float: right;
@@ -850,7 +856,7 @@ section,
   font-size: 22px;
   background: rgba(21, 21, 21, 0.9);
 }
-/* line 44, ../../sass/partials/_sections.scss */
+/* line 48, ../../sass/partials/_sections.scss */
 .info div {
   /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
   padding-bottom: 15px;
