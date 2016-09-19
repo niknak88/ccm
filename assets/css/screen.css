@@ -878,6 +878,71 @@ section.half-large .mCSB_container,
   padding-bottom: 15px;
 }
 
+/* line 63, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+  border: 0;
+  height: 76px;
+  width: 30px;
+}
+/* line 68, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-prev:before, .fp-controlArrow.fp-prev:after, .fp-controlArrow.fp-next:before, .fp-controlArrow.fp-next:after {
+  content: " ";
+  display: block;
+  width: 0.17em;
+  height: 40px;
+  background: #71100d;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 79, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-prev:hover:before, .fp-controlArrow.fp-prev:hover:after, .fp-controlArrow.fp-next:hover:before, .fp-controlArrow.fp-next:hover:after {
+  background: white;
+  width: 0.3em;
+}
+/* line 86, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-prev:before {
+  -webkit-transform: rotate(38deg);
+  -moz-transform: rotate(38deg);
+  -ms-transform: rotate(38deg);
+  -o-transform: rotate(38deg);
+  transform: rotate(38deg);
+  top: 5px;
+  left: 13px;
+}
+/* line 91, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-prev:after {
+  -webkit-transform: rotate(-38deg);
+  -moz-transform: rotate(-38deg);
+  -ms-transform: rotate(-38deg);
+  -o-transform: rotate(-38deg);
+  transform: rotate(-38deg);
+  top: 35px;
+  left: 13px;
+}
+/* line 98, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-next:before {
+  -webkit-transform: rotate(-38deg);
+  -moz-transform: rotate(-38deg);
+  -ms-transform: rotate(-38deg);
+  -o-transform: rotate(-38deg);
+  transform: rotate(-38deg);
+  top: 5px;
+  right: 11px;
+}
+/* line 103, ../../sass/partials/_sections.scss */
+.fp-controlArrow.fp-next:after {
+  -webkit-transform: rotate(38deg);
+  -moz-transform: rotate(38deg);
+  -ms-transform: rotate(38deg);
+  -o-transform: rotate(38deg);
+  transform: rotate(38deg);
+  top: 35px;
+  right: 11px;
+}
+
 /* line 13, ../../sass/screen.scss */
 *,
 *:after,
@@ -917,60 +982,4 @@ a {
 /* line 39, ../../sass/screen.scss */
 a:hover {
   color: black;
-}
-
-/* line 47, ../../sass/screen.scss */
-.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
-  border: 0;
-  height: 76px;
-  width: 30px;
-}
-/* line 52, ../../sass/screen.scss */
-.fp-controlArrow.fp-prev:before, .fp-controlArrow.fp-prev:after, .fp-controlArrow.fp-next:before, .fp-controlArrow.fp-next:after {
-  content: " ";
-  display: block;
-  width: 0.17em;
-  height: 40px;
-  background: #71100d;
-  position: absolute;
-}
-/* line 62, ../../sass/screen.scss */
-.fp-controlArrow.fp-prev:before {
-  -webkit-transform: rotate(38deg);
-  -moz-transform: rotate(38deg);
-  -ms-transform: rotate(38deg);
-  -o-transform: rotate(38deg);
-  transform: rotate(38deg);
-  top: 5px;
-  left: 13px;
-}
-/* line 67, ../../sass/screen.scss */
-.fp-controlArrow.fp-prev:after {
-  -webkit-transform: rotate(-38deg);
-  -moz-transform: rotate(-38deg);
-  -ms-transform: rotate(-38deg);
-  -o-transform: rotate(-38deg);
-  transform: rotate(-38deg);
-  top: 35px;
-  left: 13px;
-}
-/* line 74, ../../sass/screen.scss */
-.fp-controlArrow.fp-next:before {
-  -webkit-transform: rotate(-38deg);
-  -moz-transform: rotate(-38deg);
-  -ms-transform: rotate(-38deg);
-  -o-transform: rotate(-38deg);
-  transform: rotate(-38deg);
-  top: 5px;
-  right: 11px;
-}
-/* line 79, ../../sass/screen.scss */
-.fp-controlArrow.fp-next:after {
-  -webkit-transform: rotate(38deg);
-  -moz-transform: rotate(38deg);
-  -ms-transform: rotate(38deg);
-  -o-transform: rotate(38deg);
-  transform: rotate(38deg);
-  top: 35px;
-  right: 11px;
 }
