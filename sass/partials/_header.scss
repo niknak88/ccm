@@ -16,28 +16,9 @@ header {
         margin: 0;
         font-weight: 700;
         text-transform: uppercase;
-        text-shadow:
-                -1px -1px 0 rgba(21, 21, 21, 0.9),
-                1px -1px 0 rgba(21, 21, 21, 0.9),
-                -1px 1px 0 rgba(21, 21, 21, 0.9),
-                1px 1px 0 rgba(21, 21, 21, 0.9),
-                -2px -2px 0 rgba(21, 21, 21, 0.9),
-                2px -2px 0 rgba(21, 21, 21, 0.9),
-                -2px 2px 0 rgba(21, 21, 21, 0.9),
-                2px 2px 0 rgba(21, 21, 21, 0.9),
-                -3px -3px 0 rgba(21, 21, 21, 0.9),
-                3px -3px 0 rgba(21, 21, 21, 0.9),
-                -3px 3px 0 rgba(21, 21, 21, 0.9),
-                3px 3px 0 rgba(21, 21, 21, 0.9),
-                -4px -4px 0 rgba(21, 21, 21, 0.9),
-                4px -4px 0 rgba(21, 21, 21, 0.9),
-                -4px 4px 0 rgba(21, 21, 21, 0.9),
-                4px 4pX 50px black;
+        @include stroke(4, rgba(21, 21, 21, 0.9), 4px 4pX 50px black);
         @media only screen and (max-width: 800px) {
             font-size: 5em;
-        }
-        @media only screen and (max-width: 600px) {
-            font-size: 3.5em;
         }
         @media only screen and (max-width: 600px) {
             font-size: 3.5em;
@@ -45,19 +26,22 @@ header {
     }
     span {
         font-size: 1.6em;
-        margin: 0;
-        font-weight: 700;
-        text-shadow:
-                -2px -2px 0 rgba(21, 21, 21, 0.9),
-                2px -2px 0 rgba(21, 21, 21, 0.9),
-                -2px 2px 0 rgba(21, 21, 21, 0.9),
-                2px 2px 0 rgba(21, 21, 21, 0.9),
-                0 0px 10px black;
-        margin-top: 10px;
-        display: block;
         letter-spacing: 4px;
         word-spacing: 8px;
         text-transform: uppercase;
+        font-weight: 700;
+        @include stroke(2, rgba(21, 21, 21, 0.9), 0 0px 10px black);
+        margin: 10px 0 0;
+        display: block;
+        @media (min-width: 390px) and (max-width: 799px) {
+            width: 380px;
+            margin: 10px auto 0;
+        }
+        @media (max-width: 389px) {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+        }
     }
     nav {
         float: right;

@@ -1,0 +1,25 @@
+.matchs-day {
+
+  .matchs-day-row {
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    margin-bottom: 15px;
+    div{
+      display: inline-block;
+      padding: 0;
+      font-size: 16px;
+    }
+  }
+}
+.standing-table {
+  margin-bottom: 50px;
+  th {
+    padding-top: 0;
+  }
+}
+th, td {
+  padding-bottom: 0;
+}

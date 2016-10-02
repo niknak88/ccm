@@ -1,0 +1,227 @@
+
+#slide21 {
+  text-align: center;
+  span {
+    display: block;
+    font-size: 16px;
+    padding: 0;
+    line-height: 16px;
+    text-shadow: 0 0 10px rgba(21, 21, 21, 0.9);
+  }
+
+  .title-page {
+    padding: 2.1rem 0 1.68rem 0;
+    background: #191919;
+    z-index: 5000;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  h1 {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+  .match-wrapper {
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #000;
+    background-color: rgba(41, 41, 41, .9); // init 0.3
+    position: relative;
+  }
+
+  .teams-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    img {
+      opacity: 0.5;
+      display: block;
+      position: absolute;
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .teams-left {
+    left: 0;
+    img {
+      right: 150px;
+    }
+  }
+
+  .teams-right {
+    right: 0;
+    img {
+      left: 150px;
+    }
+  }
+
+  // image pattern for each teams
+  .teams-hexagon-pattern {
+    background: #222 url('http://survivor.fantasy.nfl.com/static/img/hexagon-pattern-bg_1414017724.png');
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+  }
+
+  // shadow for each teams
+  .teams-shadow-pattern {
+    background: linear-gradient(to right, rgba(white, 0) 20%, rgba(black, .8) 40%, black 45%, black 55%, rgba(black, .8) 60%, rgba(white, 0) 80%),
+    linear-gradient(to top, rgba(black,.7) -20%, rgba(white, 0) 20%),
+    linear-gradient(to left, rgba(black, .4), rgba(white, 0) 3.8%, rgba(white, 0) 96.2%, rgba(black, .4));
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  // color teams
+  .t-ccm {
+    background-color: rgba(138, 2, 2, 0.8);
+  }
+
+  .t-warriors {
+    background: rgba(24, 133, 7, 0.8);
+  }
+
+  .t-bears {
+    background: rgba(255, 255, 0, 0.8);
+  }
+
+  .t-knights {
+    background: rgba(227, 111, 1, 0.8);
+  }
+
+  .tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    @include box-shadow(rgba(black, .5) 2px 2px 10px);
+    span {
+      display: inline-block;
+      background: red;
+      padding: 0 5px;
+      font-size: 10px;
+      border-right: 1px solid rgba(black, 0.2);
+      &:last-child {
+        border-right: 0;
+        @include border-bottom-right-radius(4px);
+      }
+    }
+
+  }
+
+  .years-schedules {
+    overflow: hidden;
+    height: 25px;
+    margin-top: 22px;
+    ul {
+      margin: 0;
+      line-height: 25px;
+      font-weight: 700;
+      font-size: 20px;
+      font-family: "Ropa Sans";
+    }
+  }
+
+
+  .input-field .select-wrapper {
+    .caret {
+      color: white;
+    }
+    ul.select-dropdown {
+      background: #191919;
+      li.active,
+      li span:hover {
+        color: red;
+        background: #191919;
+      }
+      li span {
+        color: white;
+      }
+    }
+  }
+
+  .row .year-sep {
+    display: block;
+    background-color: #191919;
+    @include background-image(linear-gradient(#191919, rgba(#333, .5)));
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Ropa Sans";
+    padding: 10px 0 10px 75px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 50px;
+      height: 7px;
+      background: white;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 20px;
+    }
+  }
+
+  .col-versus {
+    z-index: 500;
+    position: relative;
+    padding: 10px;
+    height: 110px;
+    color: #ccc;
+    font-family: 'Ropa Sans', sans-serif;
+  }
+  .date-match {
+    font-size: 20px;
+  }
+  .versus-match {
+    font-size: 28px;
+    font-family: 'Graduate', cursive;
+    &.final-score {
+      font-size: 25px;
+      span {
+        display: inline-block;
+        font-size: 30px;
+        padding: 0 20px;
+      }
+      &.score-win {
+        color: #33861C;
+      }
+      &.score-loose {
+        color: #9d0000;
+      }
+    }
+  }
+  .col-teams {
+    z-index: 500;
+    position: relative;
+    padding: 15px;
+    height: 110px;
+    &.col-teams-left {
+      text-align: right;
+      padding-right: 50px;
+    }
+    &.col-teams-right {
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+  .title-teams {
+    font-size: 35px;
+    font-family: 'Graduate', cursive;
+    letter-spacing: 2px;
+    @include stroke(1, rgba(21, 21, 21, 0.9));
+  }
+}

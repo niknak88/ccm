@@ -6,6 +6,7 @@
 @import 'partials/socials';
 @import 'partials/scrollDown';
 @import 'partials/schedules';
+@import 'partials/standings';
 @import 'partials/sections';
 
 *, 
@@ -39,4 +40,35 @@ a {
     &:hover {
         color: $linkHoverColor;
     }
+}
+
+h1 {
+    font-size: 3.1rem;
+    margin: 0 0 1.424rem 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 1.46rem 0 1.168rem 0;
+}
+
+h3, h4 {
+    //font-size: 2.28rem;
+    font-size: 1.64rem;
+    margin: 1.14rem 0 0.912rem 0;
+}
+
+h3, h5 {
+    font-weight: 700;
+}
+
+h5, h6 {
+    font-size: 22px;
+    margin: 0.5rem 0 0.4rem 0;
+}
+
+#map {
+    height: 100%;
+    width: 50%;
+    float: left;
 }

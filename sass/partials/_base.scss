@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6{
 }
 *{
     font-family: 'Ubuntu';
-    /*font-family: $fontAlt;*/
 }
 
 @mixin logo_bottom_header($left: true) {
@@ -59,4 +58,18 @@ h1, h2, h3, h4, h5, h6{
 			@include filter(grayscale(0%));
 		}
 	}
+}
+
+@mixin stroke($width, $color, $other: null) {
+	$shadow: ();
+	@for $i from -$width through $width {
+		$shadow: append($shadow,#{$width}px #{$i}px $color, comma);
+		$shadow: append($shadow,#{-$width}px #{$i}px $color, comma);
+		$shadow: append($shadow,#{$i}px #{$width}px $color, comma);
+		$shadow: append($shadow,#{$i}px #{-$width}px $color, comma);
+	}
+	@if $other != null {
+		$shadow: append($shadow,$other, comma);
+	}
+	text-shadow: $shadow;
 }

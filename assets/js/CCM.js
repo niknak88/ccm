@@ -1,10 +1,24 @@
 $(document).ready(function () {
+
+    if($( document ).width() < 991) {
+        $('.share hb').each(function(){
+            $(this).removeClass('hb-sm').addClass('hb-xs').closest('a').removeClass('hb-sm-margin').addClass('hb-xs-margin');
+        });
+    }
+    else {
+        $('.share hb').each(function(){
+            $(this).removeClass('hb-xs').addClass('hb-sm').closest('a').removeClass('hb-xs-margin').addClass('hb-sm-margin');
+        });
+    }
+
+
     // Active section full page, with navigation slide.
     $('#fullpage').fullpage({
         verticalCentered: false,
         menu: '#menu',
         anchors: ['section01', 'section11', 'section21', 'section31', 'section41', 'section51'],
         css3: false,
+        loopHorizontal: false,
         onLeave: function(index, nextIndex, direction) {
             $('#slide-out').find('.active').removeClass('active');
             $('#slide-out li').eq(nextIndex).addClass('active').find('a').addClass('active');
@@ -63,6 +77,9 @@ $(document).ready(function () {
         }
     }).css('left', '6px');
     $('#nav-icon3').css('left', '').removeClass('open');
+
+    // Active select js with materialize js
+    $('select').material_select();
 
     // scrollbar inside content per section
     $(window).on("load", function () {
