@@ -16,6 +16,7 @@
     -moz-box-sizing: border-box; 
     box-sizing: border-box; 
 }
+
 body, 
 html { 
     font-size: 100%; 
@@ -67,8 +68,49 @@ h5, h6 {
     margin: 0.5rem 0 0.4rem 0;
 }
 
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $redCM;
+    @include box-shadow($redCM 0 1px 0 0);
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $redCM;
+}
+
+.btn, .btn-large {
+    background-color: $redCM;
+}
+.btn:hover, .btn-large:hover {
+    background-color: lighten($redCM,5%);
+}
+
 #map {
     height: 100%;
     width: 50%;
     float: left;
+    z-index: 500;
 }

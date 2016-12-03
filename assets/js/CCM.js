@@ -1,22 +1,23 @@
 $(document).ready(function () {
 
-    if($( document ).width() < 991) {
-        $('.share hb').each(function(){
-            $(this).removeClass('hb-sm').addClass('hb-xs').closest('a').removeClass('hb-sm-margin').addClass('hb-xs-margin');
-        });
-    }
-    else {
-        $('.share hb').each(function(){
-            $(this).removeClass('hb-xs').addClass('hb-sm').closest('a').removeClass('hb-xs-margin').addClass('hb-sm-margin');
-        });
-    }
-
+    // Change share icon size.
+    $( window ).resize(function() {
+        if($( document ).width() < 602) {
+            $('.share .hb').each(function(){
+                $(this).removeClass('hb-sm').addClass('hb-xs').closest('a').removeClass('hb-sm-margin').addClass('hb-xs-margin');
+            });
+        } else {
+            $('.share .hb').each(function(){
+                $(this).removeClass('hb-xs').addClass('hb-sm').closest('a').removeClass('hb-xs-margin').addClass('hb-sm-margin');
+            });
+        }
+    });
 
     // Active section full page, with navigation slide.
     $('#fullpage').fullpage({
         verticalCentered: false,
         menu: '#menu',
-        anchors: ['section01', 'section11', 'section21', 'section31', 'section41', 'section51'],
+        anchors: ['home', 'about', 'scheduler', 'standing', 'rooster', 'training', 'contact'],
         css3: false,
         loopHorizontal: false,
         onLeave: function(index, nextIndex, direction) {
@@ -75,7 +76,11 @@ $(document).ready(function () {
             }
             $('#nav-icon3').css('left', parseInt(transform)+300);
         }
-    }).css('left', '6px');
+    }).css('left', '6px').find('a').click(function(){
+        setTimeout(function() {
+            $('#nav-icon3').trigger("click");
+        }, 250);
+    });
     $('#nav-icon3').css('left', '').removeClass('open');
 
     // Active select js with materialize js
