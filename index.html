@@ -14,11 +14,11 @@
     <!--Materialize style-->
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Fullpage style-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css" rel="stylesheet"
-          media="screen,projection"/>
+    <!--<link href="assets/css/jquery.fullPage.min.css" rel="stylesheet"/>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css" rel="stylesheet" media="screen,projection"/>
     <!--Scrollbar style-->
-    <link href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"
-          media="screen,projection"/>
+    <!--<link href="assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>-->
+    <link href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="screen,projection"/>
     <!--Hexa share button style-->
     <link href="assets/css/hexagons.min.css" rel="stylesheet"/>
     <!--Font awesomwe style-->
@@ -141,9 +141,19 @@
     <!--History-->
     <section class="section" id="section-about">
         <div class="row">
-            <div class="col s12 m8 offset-m4 l6 offset-l6 info half-large">
-                <div class="info-text-inside">
-                    <h1>A family is born</h1>
+            <div class="col m4 l6 hide-on-small-and-down title-left">
+                <a href="#about" class="valign-wrapper active">
+                    <h1 class="valign">A family is born</h1>
+                </a>
+                <a href="#about-flag" class="valign-wrapper">
+                    <h1 class="valign">A la découverte du Flag football</h1>
+                </a>
+                <a href="#about-tackle" class="valign-wrapper">
+                    <h1 class="valign">Le football américain c'est quoi ?</h1>
+                </a>
+            </div>
+            <div class="col s12 m8 l6 info half-large">
+                <div class="info-text-inside" id="about-story">
                     <p>Les Charleroi Coal Miners sont nés de la fusion des CHARLEROI COUGARS (Foot US) et des
                         CHARLEROI STEELERS (Flag Football).</p>
                     <p>Grâce à cette fusion, un véritable pôle de Foot Américain a vu le jour, en 2012, dans le sud
@@ -161,12 +171,7 @@
                         monde meilleur à leurs enfants.</p>
                     <p>Ces enfants, c'est nous.</p>
                 </div>
-            </div>
-        </div>
-        <div class="row hide">
-            <div class="col s12 m8 offset-m4 l6 offset-l6 info half-large">
-                <div class="info-text-inside">
-                    <h1>A la découverte du Flag football</h1>
+                <div class="info-text-inside hide" id="about-flag">
                     <p>Le flag est une forme du football américain. Sport où la mixité est prônée, c’est un sport
                         d’opposition sans contact. Les placages sont remplacés par l’arrachage d’un flag (drapeau en
                         anglais) accroché à la ceinture des joueurs.</p>
@@ -182,12 +187,7 @@
                         lieu à des compétitions nationales et internationales sur le continent américain et en
                         Europe.</p>
                 </div>
-            </div>
-        </div>
-        <div class="row hide">
-            <div class="col s12 m8 offset-m4 l6 offset-l6 info half-large">
-                <div class="info-text-inside">
-                    <h1>Le football américain c'est quoi ?</h1>
+                <div class="info-text-inside hide" id="about-tackle">
                     <p>Bien que physique, le foot us est un sport très stratégique. Il y a trois équipes dans une
                         même team.</p>
                     <p>L'équipe attaque.<br>
@@ -214,6 +214,7 @@
                 <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
         </a>
+        <div class="cta-down-bg"></div>
     </section>
     <!--Scheduler-->
     <section class="section" id="section-scheduler">
@@ -566,6 +567,7 @@
                 <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
         </a>
+        <div class="cta-down-bg"></div>
     </section>
     <!--Standing-->
     <section class="section" id="section-standing">
@@ -742,6 +744,7 @@
                 <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
         </a>
+        <div class="cta-down-bg"></div>
     </section>
     <!--Roster-->
     <section class="section" id="section-roster">
@@ -758,31 +761,38 @@
                 <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
         </a>
+        <div class="cta-down-bg"></div>
     </section>
     <!--Try out training-->
     <section class="section" id="section-training">
         <div class="row">
-            <div class="col s12 m8 offset-m4 l6 offset-l6 info half-large">
-                <div class="info-text-inside">
-                    <h1>Try out</h1>
+            <div class="col m4 l6 hide-on-small-and-down title-left">
+                <a href="#training" class="valign-wrapper active">
+                    <h1 class="valign">Try out</h1>
+                </a>
+                <a href="#training-players" class="valign-wrapper">
+                    <h1 class="valign">Training</h1>
+                </a>
+            </div>
+            <div class="col s12 m8 l6 info half-large">
+                <div class="info-text-inside" id="training-tryout">
                     Deux ou trois entraînements sont parfois nécessaires afin de se rendre compte du plaisir que procure
                     ce sport !
                     Nous vous les offrons!
                     <br/>
                     L’équipement spécifique au Football sera mis à votre disposition, munissez-vous d’une paire de
                     chaussures de Foot ou basket, un training, t-shirt, une bouteille d’eau.
-                    </br></br>
-                    <h1>Training</h1>
+                </div>
+                <div class="info-text-inside hide" id="training-players">
                     L’entraînement Flag Football a lieu :
                     le mercredi de 17h15 (17h30 sur le terrain en tenue) jusque 19h30
                     le samedi de 10h15 (10h30 sur le terrain) jusque 12h30
-
-
+                    <br/>
+                    <br/>
                     L’entraînement Football a lieu :
                     Junior/Senior : le mercredi de 19h15 (19h30 sur le terrain en tenue) jusque 21h30
-
+                    <br/>
                     Junior / Senior : le vendredi de 19h45 (20h00 sur le terrain) jusque 22h00
-
                 </div>
             </div>
         </div>
@@ -792,6 +802,7 @@
                 <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
             </div>
         </a>
+        <div class="cta-down-bg"></div>
     </section>
     <!--Contact-->
     <section class="section" id="section-contact">
@@ -845,18 +856,22 @@
     </section>
 </div>
 <!--jQuery-->
+<!--<script src="assets/js/jquery-2.1.1.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!--Fullpage-->
+<!--<script src="assets/js/jquery.fullPage.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.js"></script>
 <!--Scrollbar-->
+<!--<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
 <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <!--Loadgo-->
+<!--<script src="assets/js/loadgo.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo.min.js"></script>
 <!--TweenMax animation -->
+<!--<script src="assets/js/TweenMax.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <!--Google maps-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFvwCjpAfPCqJMYcrrmq1BV_v2IldFEI&callback=initMap" async
-        defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFvwCjpAfPCqJMYcrrmq1BV_v2IldFEI&callback=initMap" async defer></script>
 <!--Detect change attributes-->
 <script src="assets/js/attrchange.js"></script>
 <script src="assets/js/attrchange_ext.js"></script>

@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    // Detect Subsection anchor and goto
+    //console.log(document.URL);
+
     // Change share icon size.
     $( window ).resize(function() {
         if($( document ).width() < 602) {
@@ -17,7 +20,7 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         verticalCentered: false,
         menu: '#menu',
-        anchors: ['home', 'about', 'scheduler', 'standing', 'rooster', 'training', 'contact'],
+        anchors: ['home', 'about', 'scheduler', 'standing', 'roster', 'training', 'contact'],
         css3: false,
         loopHorizontal: false,
         onLeave: function(index, nextIndex, direction) {
@@ -86,8 +89,30 @@ $(document).ready(function () {
     // Active select js with materialize js
     $('select').material_select();
 
+
+
+    // Change sub-section inside Fullpage section.
+    $('.title-left a').click(function(e){
+        e.preventDefault();
+        var wrap = $(this).closest('.row');
+        wrap.find('.info-text-inside')
+            //.fadeTo(200, 0)
+            .hide(500)
+            .removeClass('hide')
+            .eq($(this).index())
+            .show(800);
+            //.fadeTo(200, 1);
+        wrap.find('.title-left a').removeClass('active');
+        $(this).addClass('active');
+        //window.location.hash = $(this).attr('href');
+    });
+
     // scrollbar inside content per section
     $(window).on("load", function () {
+        $(".title-left").height($(window).height()).find('a').each(function(){
+            var titleLeftChildHeight = 100 / $(this).parent().children().length;
+            $(this).height(titleLeftChildHeight+"%");
+        });
         $(".half-large").mCustomScrollbar({
             axis: 'y',
             setTop: 50,

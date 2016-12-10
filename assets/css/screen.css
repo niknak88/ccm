@@ -790,39 +790,38 @@ header nav a:hover:before {
 }
 
 /* line 2, ../../sass/partials/_scrollDown.scss */
+.cta-down-bg {
+  display: block;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.99) 55%);
+  z-index: 50000;
+}
+
+/* line 13, ../../sass/partials/_scrollDown.scss */
 .cta-down {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  margin-left: -100px;
-  z-index: 2;
+  left: 0;
+  z-index: 50001;
   height: 80px;
-  width: 200px;
+  width: 100%;
   display: block;
 }
-/* line 11, ../../sass/partials/_scrollDown.scss */
+/* line 25, ../../sass/partials/_scrollDown.scss */
 .cta-down.cta-down-small {
   height: 65px;
 }
-/* line 13, ../../sass/partials/_scrollDown.scss */
-.cta-down.cta-down-small:after {
-  display: block;
-  width: 250px;
-  height: 250px;
-  content: "";
-  position: absolute;
-  bottom: -125px;
-  left: -28px;
-  border-radius: 250px;
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 130, color-stop(30.76923%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-radial-gradient(#000000 40px, rgba(0, 0, 0, 0) 130px);
-  background-image: -moz-radial-gradient(#000000 40px, rgba(0, 0, 0, 0) 130px);
-  background-image: -o-radial-gradient(#000000 40px, rgba(0, 0, 0, 0) 130px);
-  background-image: radial-gradient(#000000 40px, rgba(0, 0, 0, 0) 130px);
-  background-repeat: no-repeat;
-  z-index: -1;
+/* line 41, ../../sass/partials/_scrollDown.scss */
+.cta-down .cta-down-title {
+  width: 25%;
+  min-width: 300px;
+  margin: 0 auto;
 }
-/* line 27, ../../sass/partials/_scrollDown.scss */
+/* line 46, ../../sass/partials/_scrollDown.scss */
 .cta-down i, .cta-down span {
   display: block;
   text-align: center;
@@ -831,20 +830,20 @@ header nav a:hover:before {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 32, ../../sass/partials/_scrollDown.scss */
+/* line 51, ../../sass/partials/_scrollDown.scss */
 .cta-down:hover {
   color: white;
 }
-/* line 34, ../../sass/partials/_scrollDown.scss */
+/* line 53, ../../sass/partials/_scrollDown.scss */
 .cta-down:hover i {
   margin-top: -10px;
 }
-/* line 37, ../../sass/partials/_scrollDown.scss */
+/* line 56, ../../sass/partials/_scrollDown.scss */
 .cta-down:hover span {
   margin-top: 25px;
 }
 
-/* line 45, ../../sass/partials/_scrollDown.scss */
+/* line 64, ../../sass/partials/_scrollDown.scss */
 .scroll-down {
   position: absolute;
   bottom: 0;
@@ -856,11 +855,11 @@ header nav a:hover:before {
   display: block;
   overflow: hidden;
 }
-/* line 55, ../../sass/partials/_scrollDown.scss */
+/* line 74, ../../sass/partials/_scrollDown.scss */
 .scroll-down:hover {
   color: white;
 }
-/* line 58, ../../sass/partials/_scrollDown.scss */
+/* line 77, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-title {
   margin: auto;
   display: block;
@@ -869,7 +868,7 @@ header nav a:hover:before {
   width: 200px;
   overflow: hidden;
 }
-/* line 65, ../../sass/partials/_scrollDown.scss */
+/* line 84, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-title span {
   text-shadow: 1px -1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), 1px 0px rgba(21, 21, 21, 0.9), -1px 0px rgba(21, 21, 21, 0.9), 0px 1px rgba(21, 21, 21, 0.9), 0px -1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), 1px -1px rgba(21, 21, 21, 0.9), 0 0px 10px black;
   font-weight: 700;
@@ -879,7 +878,7 @@ header nav a:hover:before {
   display: block;
   transform: translateY(-100%);
 }
-/* line 76, ../../sass/partials/_scrollDown.scss */
+/* line 95, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-streak {
   position: relative;
   margin: auto;
@@ -889,7 +888,7 @@ header nav a:hover:before {
   height: 100px;
   overflow: hidden;
 }
-/* line 84, ../../sass/partials/_scrollDown.scss */
+/* line 103, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-streak span {
   width: 2px;
   background: white;
@@ -899,7 +898,7 @@ header nav a:hover:before {
   display: block;
   margin-top: -115px;
 }
-/* line 93, ../../sass/partials/_scrollDown.scss */
+/* line 112, ../../sass/partials/_scrollDown.scss */
 .scroll-down .scroll-down-streak span span.arrow {
   display: block;
   width: 22px;
@@ -911,13 +910,13 @@ header nav a:hover:before {
   background: transparent;
 }
 
-/* line 107, ../../sass/partials/_scrollDown.scss */
+/* line 126, ../../sass/partials/_scrollDown.scss */
 .hover-animation-text {
   margin: 0;
   padding: 0;
   transform: translateY(0%);
 }
-/* line 111, ../../sass/partials/_scrollDown.scss */
+/* line 130, ../../sass/partials/_scrollDown.scss */
 .hover-animation-text li {
   line-height: 25px;
   margin: 0;
@@ -1241,22 +1240,83 @@ section.half-large .mCSB_container,
   background-image: url(../images/1.jpg);
 }
 
-/* line 28, ../../sass/partials/_sections.scss */
+/* line 27, ../../sass/partials/_sections.scss */
 #section-roster {
   background-image: url(../images/3_2.png);
 }
 
-/* line 32, ../../sass/partials/_sections.scss */
+/* line 31, ../../sass/partials/_sections.scss */
 #section-training {
   background-image: url(../images/6_1.png);
 }
 
-/* line 36, ../../sass/partials/_sections.scss */
+/* line 35, ../../sass/partials/_sections.scss */
 #section-contact {
   background: #191919;
 }
 
-/* line 40, ../../sass/partials/_sections.scss */
+/* line 39, ../../sass/partials/_sections.scss */
+.row .col.title-left {
+  padding: 0;
+}
+/* line 41, ../../sass/partials/_sections.scss */
+.row .col.title-left a {
+  background: rgba(21, 21, 21, 0.3);
+  position: relative;
+  position: relative;
+  color: rgba(119, 116, 116, 0.76);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 47, ../../sass/partials/_sections.scss */
+.row .col.title-left a:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(21, 21, 21, 0.6);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 55, ../../sass/partials/_sections.scss */
+.row .col.title-left a:hover {
+  color: white;
+}
+/* line 57, ../../sass/partials/_sections.scss */
+.row .col.title-left a:hover:after {
+  background: rgba(21, 21, 21, 0.4);
+}
+/* line 61, ../../sass/partials/_sections.scss */
+.row .col.title-left a.active {
+  color: white;
+}
+/* line 63, ../../sass/partials/_sections.scss */
+.row .col.title-left a.active:after {
+  display: none;
+}
+/* line 68, ../../sass/partials/_sections.scss */
+.row .col.title-left h1 {
+  margin: 0 20px;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+@media (min-width: 1200px) {
+  /* line 68, ../../sass/partials/_sections.scss */
+  .row .col.title-left h1 {
+    max-width: 570px;
+    margin: 0 auto;
+  }
+}
+
+/* line 80, ../../sass/partials/_sections.scss */
 .info {
   height: 100%;
   min-height: 100%;
@@ -1265,41 +1325,45 @@ section.half-large .mCSB_container,
   font-size: 22px;
   background: rgba(21, 21, 21, 0.9);
 }
-/* line 44, ../../sass/partials/_sections.scss */
+/* line 84, ../../sass/partials/_sections.scss */
 .info.half-large {
   padding: 20px 0 20px 80px;
 }
 @media screen and (min-width: 992px) {
-  /* line 44, ../../sass/partials/_sections.scss */
+  /* line 84, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 50px 60px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 991px) {
-  /* line 44, ../../sass/partials/_sections.scss */
+  /* line 84, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 20px 60px 50px 60px;
   }
 }
-/* line 53, ../../sass/partials/_sections.scss */
+/* line 93, ../../sass/partials/_sections.scss */
 .info.full-large {
   padding: 20px 20px 20px 80px;
 }
 @media screen and (min-width: 600px) {
-  /* line 53, ../../sass/partials/_sections.scss */
+  /* line 93, ../../sass/partials/_sections.scss */
   .info.full-large {
     padding: 30px;
   }
 }
-/* line 58, ../../sass/partials/_sections.scss */
+/* line 98, ../../sass/partials/_sections.scss */
 .info.full-large h1 {
   text-align: center;
 }
-/* line 65, ../../sass/partials/_sections.scss */
+/* line 105, ../../sass/partials/_sections.scss */
 .info .info-text-inside {
   padding: 0 20px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-/* line 68, ../../sass/partials/_sections.scss */
+/* line 109, ../../sass/partials/_sections.scss */
 .info div {
   /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
   padding-bottom: 15px;

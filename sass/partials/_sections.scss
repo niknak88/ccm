@@ -22,7 +22,6 @@ section,
 
 #section-scheduler {
     background-image: url(../images/1.jpg);
-
 }
 
 #section-roster {
@@ -35,6 +34,47 @@ section,
 
 #section-contact {
     background: rgb(25, 25, 25);
+}
+
+.row .col.title-left {
+    padding: 0;
+    a {
+        background: rgba(21, 21, 21, 0.3);
+        position: relative;
+        position: relative;
+        color: rgba(119, 116, 116, 0.76);
+        @include single-transition(all, .2s, ease-in);
+        &:after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: rgba(21, 21, 21, 0.6);
+            @include single-transition(all, .2s, ease-in);
+        }
+        &:hover{
+            color: white;
+            &:after {
+                background: rgba(21, 21, 21, 0.4);
+            }
+        }
+        &.active {
+            color: white;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    h1 {
+        margin: 0 20px;
+        text-align: center;
+        width: 100%;
+        @include single-transition(all, .2s, ease-in-out);
+        @media (min-width: 1200px) {
+            max-width: 570px;
+            margin: 0 auto;
+        }
+    }
 }
 
 .info {
@@ -64,6 +104,7 @@ section,
     background: rgba(21, 21, 21, 0.9);
     .info-text-inside {
         padding: 0 20px;
+        @include single-transition(all, .2s, ease-in);
     }
     div {
         /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
