@@ -1,12 +1,29 @@
 .matchs-day {
-
+  margin-top: 80px;
   .matchs-day-row {
     padding: 0;
   }
-
+  .match-hour{
+    font-style: italic;
+  }
+  .match-teams{
+    span {
+      display: inline-block;
+      padding:0 5px;
+      font-style: italic;
+      font-size: 11px;
+    }
+  }
+  .match-score{
+    font-size: 18px;
+  }
+  //span {
+  //  display: block;
+  //  padding-bottom: 10px;
+  //}
   ul {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     div{
       display: inline-block;
       padding: 0;
@@ -14,8 +31,11 @@
     }
   }
 }
-.standing-table {
-  margin-bottom: 50px;
+.row .col.standing-table {
+  padding-right: 85px;
+  table {
+    margin-bottom: 50px;
+  }
   th {
     padding-top: 0;
   }

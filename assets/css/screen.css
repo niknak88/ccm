@@ -10,12 +10,169 @@
   font-style: normal;
 }
 
-/* line 31, ../../sass/partials/_base.scss */
+@media only screen and (min-width: 1201px) {
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl1 {
+    width: 8.33333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl1 {
+    width: 16.66667%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl2 {
+    width: 16.66667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl2 {
+    width: 33.33333%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl3 {
+    width: 25.0%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl3 {
+    width: 50.0%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl4 {
+    width: 33.33333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl4 {
+    width: 66.66667%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl5 {
+    width: 41.66667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl5 {
+    width: 83.33333%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl6 {
+    width: 50.0%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl6 {
+    width: 100.0%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl7 {
+    width: 58.33333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl7 {
+    width: 116.66667%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl8 {
+    width: 66.66667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl8 {
+    width: 133.33333%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl9 {
+    width: 75.0%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl9 {
+    width: 150.0%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl10 {
+    width: 83.33333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl10 {
+    width: 166.66667%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl11 {
+    width: 91.66667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl11 {
+    width: 183.33333%;
+  }
+
+  /* line 32, ../../sass/partials/_base.scss */
+  .row .col.xl12 {
+    width: 100.0%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+
+  /* line 38, ../../sass/partials/_base.scss */
+  .half-panel .row .col.xl12 {
+    width: 200.0%;
+  }
+}
+/* line 45, ../../sass/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Graduate", cursive;
 }
 
-/* line 34, ../../sass/partials/_base.scss */
+/* line 48, ../../sass/partials/_base.scss */
 * {
   font-family: 'Ubuntu';
 }
@@ -1178,32 +1335,398 @@ header nav a:hover:before {
   text-shadow: 1px -1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), 1px 0px rgba(21, 21, 21, 0.9), -1px 0px rgba(21, 21, 21, 0.9), 0px 1px rgba(21, 21, 21, 0.9), 0px -1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), 1px -1px rgba(21, 21, 21, 0.9);
 }
 
+/* line 3, ../../sass/partials/_roster.scss */
+#section-roster .info {
+  height: 100%;
+  min-height: 100%;
+  padding: 50px 80px;
+  position: relative;
+  font-size: 22px;
+  background: rgba(21, 21, 21, 0.925);
+}
+/* line 8, ../../sass/partials/_roster.scss */
+#section-roster .info.half-panel:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.83);
+}
+/* line 19, ../../sass/partials/_roster.scss */
+#section-roster .info.half-panel .itemList:not(.active):not(.hover-active):after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.83);
+  z-index: 500;
+}
+/* line 31, ../../sass/partials/_roster.scss */
+#section-roster .info.half-large {
+  position: relative;
+  padding: 20px 0 20px 80px;
+}
+@media screen and (min-width: 992px) {
+  /* line 31, ../../sass/partials/_roster.scss */
+  #section-roster .info.half-large {
+    padding: 50px 60px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  /* line 31, ../../sass/partials/_roster.scss */
+  #section-roster .info.half-large {
+    padding: 20px 60px 50px 60px;
+  }
+}
+/* line 50, ../../sass/partials/_roster.scss */
+#section-roster .info .itemList {
+  position: relative;
+}
+/* line 53, ../../sass/partials/_roster.scss */
+#section-roster .info .itemList.active, #section-roster .info .itemList.hover-active {
+  z-index: 501;
+}
+/* line 55, ../../sass/partials/_roster.scss */
+#section-roster .info .itemList.active .player-wrapper:after, #section-roster .info .itemList.hover-active .player-wrapper:after {
+  border: 1px solid rgba(230, 230, 230, 0.78);
+}
+/* line 57, ../../sass/partials/_roster.scss */
+#section-roster .info .itemList.active .player-wrapper:after:hover .player-hover, #section-roster .info .itemList.hover-active .player-wrapper:after:hover .player-hover {
+  opacity: 0;
+}
+
+/* line 66, ../../sass/partials/_roster.scss */
+.player-wrapper {
+  background: #080101;
+  height: 250px;
+  width: 100%;
+  margin: 50px auto 0;
+  position: relative;
+}
+/* line 72, ../../sass/partials/_roster.scss */
+.player-wrapper:after {
+  content: "";
+  width: 100%;
+  height: 280px;
+  display: block;
+  position: absolute;
+  top: -15px;
+  background: #080101;
+}
+/* line 82, ../../sass/partials/_roster.scss */
+.player-wrapper:hover {
+  cursor: pointer;
+}
+/* line 84, ../../sass/partials/_roster.scss */
+.player-wrapper:hover .player-hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.88);
+}
+/* line 89, ../../sass/partials/_roster.scss */
+.player-wrapper .headshot-wrapper {
+  -moz-border-radius-bottomleft: 200px;
+  -webkit-border-bottom-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  -moz-border-radius-bottomright: 200px;
+  -webkit-border-bottom-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #430a08), color-stop(100%, #71100d));
+  background-image: -webkit-linear-gradient(#430a08, #71100d);
+  background-image: -moz-linear-gradient(#430a08, #71100d);
+  background-image: -o-linear-gradient(#430a08, #71100d);
+  background-image: linear-gradient(#430a08, #71100d);
+  overflow: hidden;
+  height: 210px;
+  width: 100%;
+  position: relative;
+  z-index: 50;
+  margin: 0 auto;
+  box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+}
+/* line 100, ../../sass/partials/_roster.scss */
+.player-wrapper .headshot-shadow {
+  width: 250px;
+  height: 65px;
+  margin-top: 30px;
+  margin-left: 57%;
+  background: #160302;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+}
+/* line 110, ../../sass/partials/_roster.scss */
+.player-wrapper .headshot {
+  overflow: hidden;
+  height: 200px;
+  width: 80%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: -49%;
+  transform-origin: 48% 0;
+  background: url("http://s.nflcdn.com/static/content/public/static/img/fantasy/transparent/200x200/BEL474300.png");
+}
+
+/* line 121, ../../sass/partials/_roster.scss */
+.player {
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* line 126, ../../sass/partials/_roster.scss */
+.player-info {
+  font-family: Graduate;
+  position: relative;
+  margin-top: 15px;
+  padding: 0;
+  z-index: 15;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* line 138, ../../sass/partials/_roster.scss */
+.player-hover {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  height: 270px;
+  background: transparent;
+  opacity: 0;
+  z-index: 50;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 147, ../../sass/partials/_roster.scss */
+.player-hover div {
+  width: 100%;
+  padding: 0 15px;
+}
+/* line 149, ../../sass/partials/_roster.scss */
+.player-hover div span {
+  font-size: 30px;
+  line-height: 40px;
+  display: block;
+  letter-spacing: 2px;
+  font-family: Graduate;
+}
+/* line 155, ../../sass/partials/_roster.scss */
+.player-hover div span:last-child {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 164, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile {
+  position: absolute;
+  left: -50%;
+  height: 100%;
+  top: 0;
+  z-index: 250;
+  padding: 0;
+  background: rgba(8, 1, 1, 0.97);
+}
+/* line 172, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile.open {
+  left: 0;
+}
+/* line 175, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile #close-panel-profile {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 181, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .position-list {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 185, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .position-list li {
+  display: inline-block;
+}
+/* line 187, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .position-list li.coach-post {
+  display: none;
+}
+/* line 192, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile #big-head-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  height: 300px;
+}
+/* line 197, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .big-head {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20%;
+}
+/* line 202, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #141414;
+}
+/* line 203, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 216, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-name {
+  width: 100%;
+  background: #2A2A2A;
+  height: 50px;
+  font-size: 28px;
+  padding: 0 15px;
+  font-family: Graduate;
+  font-weight: 700;
+}
+/* line 224, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-name span:first-child {
+  font-weight: 400;
+}
+/* line 228, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table {
+  margin: 30px;
+}
+/* line 231, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-weight:before {
+  content: "Poids :";
+}
+/* line 234, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-weight:after {
+  content: " kg";
+}
+/* line 239, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-height:before {
+  content: "Taille :";
+}
+/* line 242, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-height:after {
+  content: " cm";
+}
+/* line 247, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-city:before {
+  content: "Lieu :";
+}
+/* line 252, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table .player-birthday:before {
+  content: "Date :";
+}
+/* line 256, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table div {
+  width: 50%;
+  font-size: 22px;
+  font-family: Graduate;
+}
+/* line 260, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table div:after {
+  font-size: 18px;
+}
+/* line 263, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-info-table div:before {
+  width: 40%;
+  font-size: 18px;
+  font-family: Lato;
+  font-weight: 700;
+  display: inline-block;
+}
+/* line 273, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-number-on-field div {
+  font-family: Graduate;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  width: 33%;
+  display: inline-block;
+  padding: 15px 10px 25px;
+}
+/* line 281, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-number-on-field div:nth-child(2) {
+  border-left: 1px solid #080101;
+  border-right: 1px solid #080101;
+}
+/* line 285, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .player-infos .player-number-on-field div span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* line 1, ../../sass/partials/_standings.scss */
+.matchs-day {
+  margin-top: 80px;
+}
 /* line 3, ../../sass/partials/_standings.scss */
 .matchs-day .matchs-day-row {
   padding: 0;
 }
-/* line 7, ../../sass/partials/_standings.scss */
-.matchs-day ul {
-  margin: 0;
-  margin-bottom: 15px;
+/* line 6, ../../sass/partials/_standings.scss */
+.matchs-day .match-hour {
+  font-style: italic;
 }
 /* line 10, ../../sass/partials/_standings.scss */
+.matchs-day .match-teams span {
+  display: inline-block;
+  padding: 0 5px;
+  font-style: italic;
+  font-size: 11px;
+}
+/* line 17, ../../sass/partials/_standings.scss */
+.matchs-day .match-score {
+  font-size: 18px;
+}
+/* line 24, ../../sass/partials/_standings.scss */
+.matchs-day ul {
+  margin: 0;
+  margin-bottom: 25px;
+}
+/* line 27, ../../sass/partials/_standings.scss */
 .matchs-day ul div {
   display: inline-block;
   padding: 0;
   font-size: 16px;
 }
 
-/* line 17, ../../sass/partials/_standings.scss */
-.standing-table {
+/* line 34, ../../sass/partials/_standings.scss */
+.row .col.standing-table {
+  padding-right: 85px;
+}
+/* line 36, ../../sass/partials/_standings.scss */
+.row .col.standing-table table {
   margin-bottom: 50px;
 }
-/* line 19, ../../sass/partials/_standings.scss */
-.standing-table th {
+/* line 39, ../../sass/partials/_standings.scss */
+.row .col.standing-table th {
   padding-top: 0;
 }
 
-/* line 23, ../../sass/partials/_standings.scss */
+/* line 43, ../../sass/partials/_standings.scss */
 th, td {
   padding-bottom: 0;
 }
@@ -1246,20 +1769,25 @@ section.half-large .mCSB_container,
 }
 
 /* line 31, ../../sass/partials/_sections.scss */
+#section-standing {
+  background-image: url(../images/5_4.png);
+}
+
+/* line 36, ../../sass/partials/_sections.scss */
 #section-training {
   background-image: url(../images/6_1.png);
 }
 
-/* line 35, ../../sass/partials/_sections.scss */
+/* line 40, ../../sass/partials/_sections.scss */
 #section-contact {
   background: #191919;
 }
 
-/* line 39, ../../sass/partials/_sections.scss */
+/* line 44, ../../sass/partials/_sections.scss */
 .row .col.title-left {
   padding: 0;
 }
-/* line 41, ../../sass/partials/_sections.scss */
+/* line 46, ../../sass/partials/_sections.scss */
 .row .col.title-left a {
   background: rgba(21, 21, 21, 0.3);
   position: relative;
@@ -1270,7 +1798,7 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 47, ../../sass/partials/_sections.scss */
+/* line 52, ../../sass/partials/_sections.scss */
 .row .col.title-left a:after {
   position: absolute;
   width: 100%;
@@ -1282,23 +1810,23 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 55, ../../sass/partials/_sections.scss */
+/* line 60, ../../sass/partials/_sections.scss */
 .row .col.title-left a:hover {
   color: white;
 }
-/* line 57, ../../sass/partials/_sections.scss */
+/* line 62, ../../sass/partials/_sections.scss */
 .row .col.title-left a:hover:after {
   background: rgba(21, 21, 21, 0.4);
 }
-/* line 61, ../../sass/partials/_sections.scss */
+/* line 66, ../../sass/partials/_sections.scss */
 .row .col.title-left a.active {
   color: white;
 }
-/* line 63, ../../sass/partials/_sections.scss */
+/* line 68, ../../sass/partials/_sections.scss */
 .row .col.title-left a.active:after {
   display: none;
 }
-/* line 68, ../../sass/partials/_sections.scss */
+/* line 73, ../../sass/partials/_sections.scss */
 .row .col.title-left h1 {
   margin: 0 20px;
   text-align: center;
@@ -1309,14 +1837,14 @@ section.half-large .mCSB_container,
   transition: all 0.2s ease-in-out;
 }
 @media (min-width: 1200px) {
-  /* line 68, ../../sass/partials/_sections.scss */
+  /* line 73, ../../sass/partials/_sections.scss */
   .row .col.title-left h1 {
     max-width: 570px;
     margin: 0 auto;
   }
 }
 
-/* line 80, ../../sass/partials/_sections.scss */
+/* line 85, ../../sass/partials/_sections.scss */
 .info {
   height: 100%;
   min-height: 100%;
@@ -1325,37 +1853,37 @@ section.half-large .mCSB_container,
   font-size: 22px;
   background: rgba(21, 21, 21, 0.9);
 }
-/* line 84, ../../sass/partials/_sections.scss */
+/* line 89, ../../sass/partials/_sections.scss */
 .info.half-large {
   padding: 20px 0 20px 80px;
 }
 @media screen and (min-width: 992px) {
-  /* line 84, ../../sass/partials/_sections.scss */
+  /* line 89, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 50px 60px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 991px) {
-  /* line 84, ../../sass/partials/_sections.scss */
+  /* line 89, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 20px 60px 50px 60px;
   }
 }
-/* line 93, ../../sass/partials/_sections.scss */
+/* line 98, ../../sass/partials/_sections.scss */
 .info.full-large {
   padding: 20px 20px 20px 80px;
 }
 @media screen and (min-width: 600px) {
-  /* line 93, ../../sass/partials/_sections.scss */
+  /* line 98, ../../sass/partials/_sections.scss */
   .info.full-large {
     padding: 30px;
   }
 }
-/* line 98, ../../sass/partials/_sections.scss */
+/* line 103, ../../sass/partials/_sections.scss */
 .info.full-large h1 {
   text-align: center;
 }
-/* line 105, ../../sass/partials/_sections.scss */
+/* line 110, ../../sass/partials/_sections.scss */
 .info .info-text-inside {
   padding: 0 20px;
   -webkit-transition: all 0.2s ease-in;
@@ -1363,13 +1891,13 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 109, ../../sass/partials/_sections.scss */
+/* line 114, ../../sass/partials/_sections.scss */
 .info div {
   /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
   padding-bottom: 15px;
 }
 
-/* line 14, ../../sass/screen.scss */
+/* line 15, ../../sass/screen.scss */
 *,
 *:after,
 *:before {
@@ -1378,7 +1906,7 @@ section.half-large .mCSB_container,
   box-sizing: border-box;
 }
 
-/* line 21, ../../sass/screen.scss */
+/* line 22, ../../sass/screen.scss */
 body,
 html {
   font-size: 100%;
@@ -1388,58 +1916,58 @@ html {
   color: white;
 }
 
-/* line 30, ../../sass/screen.scss */
+/* line 31, ../../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 34, ../../sass/screen.scss */
+/* line 35, ../../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 38, ../../sass/screen.scss */
+/* line 39, ../../sass/screen.scss */
 a {
   color: #f0f0f0;
   text-decoration: none;
 }
-/* line 41, ../../sass/screen.scss */
+/* line 42, ../../sass/screen.scss */
 a:hover {
   color: black;
 }
 
-/* line 46, ../../sass/screen.scss */
+/* line 47, ../../sass/screen.scss */
 h1 {
   font-size: 3.1rem;
   margin: 0 0 1.424rem 0;
 }
 
-/* line 51, ../../sass/screen.scss */
+/* line 52, ../../sass/screen.scss */
 h2 {
   font-size: 2.2rem;
   margin: 1.46rem 0 1.168rem 0;
 }
 
-/* line 56, ../../sass/screen.scss */
+/* line 57, ../../sass/screen.scss */
 h3, h4 {
   font-size: 1.64rem;
   margin: 1.14rem 0 0.912rem 0;
 }
 
-/* line 62, ../../sass/screen.scss */
+/* line 63, ../../sass/screen.scss */
 h3, h5 {
   font-weight: 700;
 }
 
-/* line 66, ../../sass/screen.scss */
+/* line 67, ../../sass/screen.scss */
 h5, h6 {
   font-size: 22px;
   margin: 0.5rem 0 0.4rem 0;
 }
 
-/* line 83, ../../sass/screen.scss */
+/* line 84, ../../sass/screen.scss */
 input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
@@ -1459,7 +1987,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: #e2211a 0 1px 0 0;
 }
 
-/* line 100, ../../sass/screen.scss */
+/* line 101, ../../sass/screen.scss */
 input:not([type]):focus:not([readonly]) + label,
 input[type=text]:focus:not([readonly]) + label,
 input[type=password]:focus:not([readonly]) + label,
@@ -1476,17 +2004,17 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #e2211a;
 }
 
-/* line 104, ../../sass/screen.scss */
+/* line 105, ../../sass/screen.scss */
 .btn, .btn-large {
   background-color: #e2211a;
 }
 
-/* line 107, ../../sass/screen.scss */
+/* line 108, ../../sass/screen.scss */
 .btn:hover, .btn-large:hover {
   background-color: #e7352e;
 }
 
-/* line 111, ../../sass/screen.scss */
+/* line 112, ../../sass/screen.scss */
 #map {
   height: 100%;
   width: 50%;

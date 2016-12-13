@@ -123,4 +123,22 @@ $(document).ready(function () {
             //theme: 'dark',
         });
     });
+
+    $('.col.itemList').click(function(){
+        $('.itemList').removeClass('active');
+        $(this).addClass('active');
+        $('.half-large').addClass('m8 push-m4 l6 push-l6 half-panel').removeClass('only-list').css('left', '');
+        $('.half-panel-profile').addClass('open');
+        $('.half-panel .itemList').mouseenter(function(){
+            console.log($(this));
+        });
+    });
+
+
+
+    $( "a#close-panel-profile" ).on( "click", function() {
+        $('.half-large').removeClass('m8 push-m4 l6 push-l6 half-panel').css('left', 0);
+        $('.half-panel-profile').removeClass('open');
+        $('.itemList').removeClass('active');
+    });
 });
