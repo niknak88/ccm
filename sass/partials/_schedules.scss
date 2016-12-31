@@ -1,7 +1,7 @@
 
 #section-scheduler {
   text-align: center;
-  span {
+  .match-wrapper span {
     display: block;
     font-size: 16px;
     padding: 0;
@@ -136,22 +136,22 @@
   }
 
 
-  .input-field .select-wrapper {
-    .caret {
-      color: white;
-    }
-    ul.select-dropdown {
-      background: #191919;
-      li.active,
-      li span:hover {
-        color: red;
-        background: #191919;
-      }
-      li span {
-        color: white;
-      }
-    }
-  }
+  //.input-field .select-wrapper {
+  //  .caret {
+  //    color: white;
+  //  }
+  //  ul.select-dropdown {
+  //    background: #191919;
+  //    li.active,
+  //    li span:hover {
+  //      color: red;
+  //      background: #191919;
+  //    }
+  //    li span {
+  //      color: white;
+  //    }
+  //  }
+  //}
 
   .row .year-sep {
     display: block;

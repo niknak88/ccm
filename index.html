@@ -14,10 +14,8 @@
     <!--Materialize style-->
     <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!--Fullpage style-->
-    <!--<link href="assets/css/jquery.fullPage.min.css" rel="stylesheet"/>-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css" rel="stylesheet" media="screen,projection"/>
     <!--Scrollbar style-->
-    <!--<link href="assets/css/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>-->
     <link href="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="screen,projection"/>
     <!--Hexa share button style-->
     <link href="assets/css/hexagons.min.css" rel="stylesheet"/>
@@ -171,7 +169,7 @@
                         monde meilleur à leurs enfants.</p>
                     <p>Ces enfants, c'est nous.</p>
                 </div>
-                <div class="info-text-inside hide" id="about-flag">
+                <div class="info-text-inside" id="about-flag">
                     <p>Le flag est une forme du football américain. Sport où la mixité est prônée, c’est un sport
                         d’opposition sans contact. Les placages sont remplacés par l’arrachage d’un flag (drapeau en
                         anglais) accroché à la ceinture des joueurs.</p>
@@ -187,7 +185,7 @@
                         lieu à des compétitions nationales et internationales sur le continent américain et en
                         Europe.</p>
                 </div>
-                <div class="info-text-inside hide" id="about-tackle">
+                <div class="info-text-inside" id="about-tackle">
                     <p>Bien que physique, le foot us est un sport très stratégique. Il y a trois équipes dans une
                         même team.</p>
                     <p>L'équipe attaque.<br>
@@ -764,12 +762,13 @@
     <!--Roster-->
     <section class="section" id="section-roster">
         <div class="row">
-
             <div class="col info half-large s12">
                 <div class="info-text-inside">
-                    <h1>Rooster</h1>
+                    <div class="wrapper-title-anim">
+                        <h1>Roster</h1>
+                    </div>
                     <div class="row">
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -787,7 +786,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -805,7 +804,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -823,7 +822,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -841,7 +840,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -859,7 +858,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -877,7 +876,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -895,7 +894,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 l3 xl2 itemList">
+                        <div class="col itemList">
                             <div class="player-wrapper">
                                 <div class="player">
                                     <div class="headshot-wrapper">
@@ -920,12 +919,7 @@
                 <a href="#" id="close-panel-profile">
                     <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                 </a>
-                <ul class="position-list">
-                    <li>OLB</li>
-                    <li class="coach-post">Junior</li>
-                </ul>
                 <div>
-
                     <div id="big-head-wrapper">
                         <div>
                             <div>
@@ -933,9 +927,14 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="player-wrapper"><div class="headshot"></div></div>-->
                     <div class="player-infos">
-                        <div class="player-name"><span>Nicolas</span> Cordisco</div>
+                        <div class="player-name">
+                            <span>Nicolas</span> Cordisco
+                            <ul class="position-list">
+                                <li>OLB</li>
+                                <li class="coach-post">Junior</li>
+                            </ul>
+                        </div>
                         <div class="player-info-table row">
                             <div class="col player-birthday">06/06/1988</div>
                             <div class="col player-weight">91</div>
@@ -1003,30 +1002,100 @@
     <!--Contact-->
     <section class="section" id="section-contact">
         <div id="map"></div>
-        <div class="info half-large">
-            <div class="info-text-inside">
+        <div class="info half-large fixed row shop-panel">
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-167634.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Game jersey</div>
+                    <div class="shop-item-price"><div>115,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-179752.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Bonnet</div>
+                    <div class="shop-item-price"><div>30,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="shop-item">
+                    <img src="http://image2.kbobject.com/nfl-180070.jpg?width=170&height=170&quality=95">
+                    <div class="shop-item-title">Champ drive hoodie</div>
+                    <div class="shop-item-price"><div>75,00 €</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="info half-large fixed row">
+            <div class="cta-shop valign-wrapper">
+                <a href="" class="valign">
+                    <div><span>Go to</span>Shop</div>
+                </a>
+            </div>
+            <div class="info-text-inside col s6">
                 <h1>Contact</h1>
                 <div class="row">
                     <form class="col s12">
-                        <div class="row">
+                        <div class="row row-input">
                             <div class="input-field col s12">
                                 <input id="first_name" type="text" class="validate">
                                 <label for="first_name">First Name</label>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row row-input">
                             <div class="input-field col s12">
                                 <input id="last_name" type="text" class="validate">
                                 <label for="last_name">Last Name</label>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row row-input">
                             <div class="input-field col s12">
                                 <input id="email" type="email" class="validate">
                                 <label for="email">Email</label>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row row-input">
                             <div class="input-field col s12">
                                 <select>
                                     <option value="" disabled selected>Choose your option</option>
@@ -1048,26 +1117,34 @@
                     </form>
                 </div>
             </div>
+            <div class="carrousel-sponsors">
+                <div class="scroller">
+                    <ul>
+                        <li><a href="http://www.google.be"><img src="http://lorempixel.com/100/100/nature/1"></a></li>
+                        <li><a href="http://www.audaxis.com"><img src="http://lorempixel.com/100/100/nature/2"></a></li>
+                        <li><a href="#"><img src="http://lorempixel.com/100/100/nature/3"></a></li>
+                        <li><a href="#"><img src="http://lorempixel.com/100/100/nature/4"></a></li>
+                        <li><a href="#"><img src="http://lorempixel.com/100/100/nature/5"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 </div>
 <!--jQuery-->
-<!--<script src="assets/js/jquery-2.1.1.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!--Fullpage-->
-<!--<script src="assets/js/jquery.fullPage.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.js"></script>
 <!--Scrollbar-->
-<!--<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
 <script src="http://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <!--Loadgo-->
-<!--<script src="assets/js/loadgo.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/LoadGo/2.1/loadgo.min.js"></script>
 <!--TweenMax animation -->
-<!--<script src="assets/js/TweenMax.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 <!--Google maps-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsFvwCjpAfPCqJMYcrrmq1BV_v2IldFEI&callback=initMap" async defer></script>
+<!--JSSOR carousel -->
+<script src="assets/js/endless_scroll_min.js"></script>
 <!--Detect change attributes-->
 <script src="assets/js/attrchange.js"></script>
 <script src="assets/js/attrchange_ext.js"></script>

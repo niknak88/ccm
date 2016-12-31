@@ -1092,7 +1092,7 @@ header nav a:hover:before {
   text-align: center;
 }
 /* line 4, ../../sass/partials/_schedules.scss */
-#section-scheduler span {
+#section-scheduler .match-wrapper span {
   display: block;
   font-size: 16px;
   padding: 0;
@@ -1229,24 +1229,6 @@ header nav a:hover:before {
   font-size: 20px;
   font-family: "Ropa Sans";
 }
-/* line 140, ../../sass/partials/_schedules.scss */
-#section-scheduler .input-field .select-wrapper .caret {
-  color: white;
-}
-/* line 143, ../../sass/partials/_schedules.scss */
-#section-scheduler .input-field .select-wrapper ul.select-dropdown {
-  background: #191919;
-}
-/* line 146, ../../sass/partials/_schedules.scss */
-#section-scheduler .input-field .select-wrapper ul.select-dropdown li.active,
-#section-scheduler .input-field .select-wrapper ul.select-dropdown li span:hover {
-  color: red;
-  background: #191919;
-}
-/* line 150, ../../sass/partials/_schedules.scss */
-#section-scheduler .input-field .select-wrapper ul.select-dropdown li span {
-  color: white;
-}
 /* line 156, ../../sass/partials/_schedules.scss */
 #section-scheduler .row .year-sep {
   display: block;
@@ -1335,7 +1317,53 @@ header nav a:hover:before {
   text-shadow: 1px -1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), 1px 0px rgba(21, 21, 21, 0.9), -1px 0px rgba(21, 21, 21, 0.9), 0px 1px rgba(21, 21, 21, 0.9), 0px -1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), 1px -1px rgba(21, 21, 21, 0.9);
 }
 
-/* line 3, ../../sass/partials/_roster.scss */
+@keyframes translate-title-reset {
+  /* line 2, ../../sass/partials/_roster.scss */
+  0% {
+    min-width: 0%;
+  }
+
+  /* line 5, ../../sass/partials/_roster.scss */
+  100% {
+    min-width: 100%;
+  }
+}
+
+@keyframes translate-title {
+  /* line 10, ../../sass/partials/_roster.scss */
+  0% {
+    min-width: 100%;
+  }
+
+  /* line 13, ../../sass/partials/_roster.scss */
+  100% {
+    min-width: 0;
+  }
+}
+
+/* line 20, ../../sass/partials/_roster.scss */
+#section-roster .wrapper-title-anim {
+  position: relative;
+  height: 77px;
+}
+/* line 23, ../../sass/partials/_roster.scss */
+#section-roster .wrapper-title-anim h1 {
+  position: absolute;
+  min-width: 100%;
+  text-align: center;
+  width: auto;
+}
+/* line 28, ../../sass/partials/_roster.scss */
+#section-roster .wrapper-title-anim h1.anim-title {
+  animation: translate-title 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 32, ../../sass/partials/_roster.scss */
+#section-roster .wrapper-title-anim h1.anim-title-reset {
+  animation: translate-title-reset 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* line 39, ../../sass/partials/_roster.scss */
 #section-roster .info {
   height: 100%;
   min-height: 100%;
@@ -1344,7 +1372,7 @@ header nav a:hover:before {
   font-size: 22px;
   background: rgba(21, 21, 21, 0.925);
 }
-/* line 8, ../../sass/partials/_roster.scss */
+/* line 45, ../../sass/partials/_roster.scss */
 #section-roster .info.half-panel:after {
   content: "";
   display: block;
@@ -1355,53 +1383,74 @@ header nav a:hover:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.83);
 }
-/* line 19, ../../sass/partials/_roster.scss */
-#section-roster .info.half-panel .itemList:not(.active):not(.hover-active):after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* line 56, ../../sass/partials/_roster.scss */
+#section-roster .info.half-panel .itemList:not(.active):not(.hover-active) .player-wrapper:after {
   background: rgba(0, 0, 0, 0.83);
   z-index: 500;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 31, ../../sass/partials/_roster.scss */
+/* line 61, ../../sass/partials/_roster.scss */
+#section-roster .info.half-panel .itemList:not(.active):not(.hover-active) .player-wrapper:hover:after {
+  z-index: auto;
+}
+/* line 65, ../../sass/partials/_roster.scss */
 #section-roster .info.half-large {
   position: relative;
   padding: 20px 0 20px 80px;
 }
+/* line 66, ../../sass/partials/_roster.scss */
+#section-roster .info.half-large.half-panel {
+  padding: 20px 0 20px 40px;
+}
 @media screen and (min-width: 992px) {
-  /* line 31, ../../sass/partials/_roster.scss */
+  /* line 66, ../../sass/partials/_roster.scss */
+  #section-roster .info.half-large.half-panel {
+    padding: 50px 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  /* line 66, ../../sass/partials/_roster.scss */
+  #section-roster .info.half-large.half-panel {
+    padding: 20px 30px 50px 30px;
+  }
+}
+/* line 78, ../../sass/partials/_roster.scss */
+#section-roster .info.half-large.half-panel .info-text-inside {
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  /* line 65, ../../sass/partials/_roster.scss */
   #section-roster .info.half-large {
     padding: 50px 60px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 991px) {
-  /* line 31, ../../sass/partials/_roster.scss */
+  /* line 65, ../../sass/partials/_roster.scss */
   #section-roster .info.half-large {
     padding: 20px 60px 50px 60px;
   }
 }
-/* line 50, ../../sass/partials/_roster.scss */
+/* line 94, ../../sass/partials/_roster.scss */
 #section-roster .info .itemList {
   position: relative;
 }
-/* line 53, ../../sass/partials/_roster.scss */
+/* line 97, ../../sass/partials/_roster.scss */
 #section-roster .info .itemList.active, #section-roster .info .itemList.hover-active {
   z-index: 501;
 }
-/* line 55, ../../sass/partials/_roster.scss */
+/* line 99, ../../sass/partials/_roster.scss */
 #section-roster .info .itemList.active .player-wrapper:after, #section-roster .info .itemList.hover-active .player-wrapper:after {
   border: 1px solid rgba(230, 230, 230, 0.78);
 }
-/* line 57, ../../sass/partials/_roster.scss */
+/* line 101, ../../sass/partials/_roster.scss */
 #section-roster .info .itemList.active .player-wrapper:after:hover .player-hover, #section-roster .info .itemList.hover-active .player-wrapper:after:hover .player-hover {
   opacity: 0;
 }
 
-/* line 66, ../../sass/partials/_roster.scss */
+/* line 110, ../../sass/partials/_roster.scss */
 .player-wrapper {
   background: #080101;
   height: 250px;
@@ -1409,7 +1458,7 @@ header nav a:hover:before {
   margin: 50px auto 0;
   position: relative;
 }
-/* line 72, ../../sass/partials/_roster.scss */
+/* line 116, ../../sass/partials/_roster.scss */
 .player-wrapper:after {
   content: "";
   width: 100%;
@@ -1417,18 +1466,19 @@ header nav a:hover:before {
   display: block;
   position: absolute;
   top: -15px;
+  border: 1px solid #080101;
   background: #080101;
 }
-/* line 82, ../../sass/partials/_roster.scss */
+/* line 127, ../../sass/partials/_roster.scss */
 .player-wrapper:hover {
   cursor: pointer;
 }
-/* line 84, ../../sass/partials/_roster.scss */
+/* line 129, ../../sass/partials/_roster.scss */
 .player-wrapper:hover .player-hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.88);
 }
-/* line 89, ../../sass/partials/_roster.scss */
+/* line 134, ../../sass/partials/_roster.scss */
 .player-wrapper .headshot-wrapper {
   -moz-border-radius-bottomleft: 200px;
   -webkit-border-bottom-left-radius: 200px;
@@ -1449,7 +1499,7 @@ header nav a:hover:before {
   margin: 0 auto;
   box-shadow: inset 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 100, ../../sass/partials/_roster.scss */
+/* line 145, ../../sass/partials/_roster.scss */
 .player-wrapper .headshot-shadow {
   width: 250px;
   height: 65px;
@@ -1463,7 +1513,7 @@ header nav a:hover:before {
   transform: rotate(45deg);
   transform-origin: 0 0;
 }
-/* line 110, ../../sass/partials/_roster.scss */
+/* line 155, ../../sass/partials/_roster.scss */
 .player-wrapper .headshot {
   overflow: hidden;
   height: 200px;
@@ -1478,14 +1528,15 @@ header nav a:hover:before {
   background: url("http://s.nflcdn.com/static/content/public/static/img/fantasy/transparent/200x200/BEL474300.png");
 }
 
-/* line 121, ../../sass/partials/_roster.scss */
-.player {
+/* line 166, ../../sass/partials/_roster.scss */
+#section-roster .player {
   width: 80%;
   margin: 0 10%;
+  padding-bottom: 0;
 }
 
-/* line 126, ../../sass/partials/_roster.scss */
-.player-info {
+/* line 172, ../../sass/partials/_roster.scss */
+#section-roster .player-info {
   font-family: Graduate;
   position: relative;
   margin-top: 15px;
@@ -1497,12 +1548,12 @@ header nav a:hover:before {
   text-align: center;
 }
 
-/* line 138, ../../sass/partials/_roster.scss */
+/* line 184, ../../sass/partials/_roster.scss */
 .player-hover {
   position: absolute;
   top: -15px;
   width: 100%;
-  height: 270px;
+  height: 280px;
   background: transparent;
   opacity: 0;
   z-index: 50;
@@ -1511,12 +1562,12 @@ header nav a:hover:before {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 147, ../../sass/partials/_roster.scss */
+/* line 193, ../../sass/partials/_roster.scss */
 .player-hover div {
   width: 100%;
   padding: 0 15px;
 }
-/* line 149, ../../sass/partials/_roster.scss */
+/* line 195, ../../sass/partials/_roster.scss */
 .player-hover div span {
   font-size: 30px;
   line-height: 40px;
@@ -1524,13 +1575,22 @@ header nav a:hover:before {
   letter-spacing: 2px;
   font-family: Graduate;
 }
-/* line 155, ../../sass/partials/_roster.scss */
+/* line 201, ../../sass/partials/_roster.scss */
 .player-hover div span:last-child {
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* line 164, ../../sass/partials/_roster.scss */
+/* line 211, ../../sass/partials/_roster.scss */
+.half-panel-profile,
+.half-large {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 215, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile {
   position: absolute;
   left: -50%;
@@ -1540,51 +1600,71 @@ header nav a:hover:before {
   padding: 0;
   background: rgba(8, 1, 1, 0.97);
 }
-/* line 172, ../../sass/partials/_roster.scss */
+/* line 223, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile.open {
   left: 0;
 }
-/* line 175, ../../sass/partials/_roster.scss */
+/* line 226, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile #close-panel-profile {
   color: white;
   position: absolute;
   top: 10px;
   right: 10px;
 }
-/* line 181, ../../sass/partials/_roster.scss */
+/* line 232, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .position-list {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  margin: 0;
+  top: 0px;
+  right: 35px;
 }
-/* line 185, ../../sass/partials/_roster.scss */
+/* line 237, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .position-list li {
+  font-family: Graduate;
   display: inline-block;
+  font-size: 24px;
+  line-height: 50px;
+  vertical-align: middle;
 }
-/* line 187, ../../sass/partials/_roster.scss */
+/* line 243, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .position-list li.coach-post {
-  display: none;
+  text-indent: -200%;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
 }
-/* line 192, ../../sass/partials/_roster.scss */
+/* line 248, ../../sass/partials/_roster.scss */
+.row .col.half-panel-profile .position-list li.coach-post:after {
+  background: url("../images/cap.png") no-repeat;
+  background-size: cover;
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+/* line 261, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile #big-head-wrapper {
   margin: 0 auto;
   text-align: center;
   height: 300px;
 }
-/* line 197, ../../sass/partials/_roster.scss */
+/* line 266, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .big-head {
   width: 50%;
   height: auto;
-  margin-bottom: 20%;
+  margin-top: 15%;
 }
-/* line 202, ../../sass/partials/_roster.scss */
+/* line 271, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos {
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding-bottom: 110px;
   background: #141414;
 }
-/* line 203, ../../sass/partials/_roster.scss */
+/* line 272, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos:after {
   content: "";
   position: absolute;
@@ -1594,7 +1674,7 @@ header nav a:hover:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 216, ../../sass/partials/_roster.scss */
+/* line 286, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-name {
   width: 100%;
   background: #2A2A2A;
@@ -1604,49 +1684,49 @@ header nav a:hover:before {
   font-family: Graduate;
   font-weight: 700;
 }
-/* line 224, ../../sass/partials/_roster.scss */
+/* line 294, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-name span:first-child {
   font-weight: 400;
 }
-/* line 228, ../../sass/partials/_roster.scss */
+/* line 298, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table {
   margin: 30px;
 }
-/* line 231, ../../sass/partials/_roster.scss */
+/* line 301, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-weight:before {
   content: "Poids :";
 }
-/* line 234, ../../sass/partials/_roster.scss */
+/* line 304, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-weight:after {
   content: " kg";
 }
-/* line 239, ../../sass/partials/_roster.scss */
+/* line 309, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-height:before {
   content: "Taille :";
 }
-/* line 242, ../../sass/partials/_roster.scss */
+/* line 312, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-height:after {
   content: " cm";
 }
-/* line 247, ../../sass/partials/_roster.scss */
+/* line 317, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-city:before {
   content: "Lieu :";
 }
-/* line 252, ../../sass/partials/_roster.scss */
+/* line 322, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table .player-birthday:before {
   content: "Date :";
 }
-/* line 256, ../../sass/partials/_roster.scss */
+/* line 326, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table div {
   width: 50%;
   font-size: 22px;
   font-family: Graduate;
 }
-/* line 260, ../../sass/partials/_roster.scss */
+/* line 330, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table div:after {
   font-size: 18px;
 }
-/* line 263, ../../sass/partials/_roster.scss */
+/* line 333, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-info-table div:before {
   width: 40%;
   font-size: 18px;
@@ -1654,7 +1734,7 @@ header nav a:hover:before {
   font-weight: 700;
   display: inline-block;
 }
-/* line 273, ../../sass/partials/_roster.scss */
+/* line 343, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-number-on-field div {
   font-family: Graduate;
   text-align: center;
@@ -1664,12 +1744,12 @@ header nav a:hover:before {
   display: inline-block;
   padding: 15px 10px 25px;
 }
-/* line 281, ../../sass/partials/_roster.scss */
+/* line 351, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-number-on-field div:nth-child(2) {
   border-left: 1px solid #080101;
   border-right: 1px solid #080101;
 }
-/* line 285, ../../sass/partials/_roster.scss */
+/* line 355, ../../sass/partials/_roster.scss */
 .row .col.half-panel-profile .player-infos .player-number-on-field div span {
   display: block;
   width: 100%;
@@ -1729,6 +1809,168 @@ header nav a:hover:before {
 /* line 43, ../../sass/partials/_standings.scss */
 th, td {
   padding-bottom: 0;
+}
+
+/* line 1, ../../sass/partials/_contact.scss */
+#map {
+  margin-bottom: 150px;
+}
+
+/* line 5, ../../sass/partials/_contact.scss */
+.info .cta-shop {
+  position: absolute;
+  top: -88px;
+  right: -88px;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  padding: 0;
+  background: #71100d;
+  transform: rotate(45deg);
+  align-items: flex-end;
+  cursor: pointer;
+}
+/* line 17, ../../sass/partials/_contact.scss */
+.info .cta-shop a {
+  width: 56%;
+  margin: 0 auto;
+  line-height: 22px;
+}
+/* line 21, ../../sass/partials/_contact.scss */
+.info .cta-shop a div {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* line 24, ../../sass/partials/_contact.scss */
+.info .cta-shop a div span {
+  font-size: 0.75em;
+  display: block;
+  text-transform: lowercase;
+  letter-spacing: 0;
+}
+
+/* line 34, ../../sass/partials/_contact.scss */
+.info.half-large.shop-panel {
+  padding: 120px 20px 160px 20px;
+}
+
+/* line 38, ../../sass/partials/_contact.scss */
+.info.shop-panel {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  z-index: 502;
+  width: 50%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.98);
+  font-size: 0;
+}
+/* line 47, ../../sass/partials/_contact.scss */
+.info.shop-panel div {
+  padding-bottom: 0;
+}
+/* line 50, ../../sass/partials/_contact.scss */
+.info.shop-panel.open {
+  left: 0;
+}
+/* line 53, ../../sass/partials/_contact.scss */
+.info.shop-panel .shop-item-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 20px;
+  line-height: 20px;
+  text-shadow: black 0 0 10px, black 5px 0px 8px,black 0 5px 8px;
+  padding: 10px;
+}
+
+/* line 68, ../../sass/partials/_contact.scss */
+.shop-panel .shop-item {
+  position: relative;
+  margin-bottom: 10px;
+  background: white;
+}
+/* line 73, ../../sass/partials/_contact.scss */
+.shop-panel .shop-item:hover .shop-item-price {
+  display: block;
+  cursor: pointer;
+}
+
+/* line 80, ../../sass/partials/_contact.scss */
+.shop-item-price {
+  background: rgba(0, 0, 0, 0.45);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 88, ../../sass/partials/_contact.scss */
+.shop-item-price div {
+  width: 50%;
+  height: 22px;
+  line-height: 22px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* line 103, ../../sass/partials/_contact.scss */
+.carrousel-sponsors {
+  height: 150px;
+  width: 100%;
+  background: #101010;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  overflow: hidden;
+  z-index: 503;
+}
+/* line 112, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 115, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller ul {
+  margin: 30px 0;
+}
+/* line 118, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller li {
+  display: inline-block;
+  width: auto;
+  height: 100px;
+}
+/* line 122, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller li a {
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+}
+/* line 127, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller li img {
+  width: auto;
+  height: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 134, ../../sass/partials/_contact.scss */
+.carrousel-sponsors .scroller li:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 /* line 2, ../../sass/partials/_sections.scss */
@@ -1897,7 +2139,7 @@ section.half-large .mCSB_container,
   padding-bottom: 15px;
 }
 
-/* line 15, ../../sass/screen.scss */
+/* line 16, ../../sass/screen.scss */
 *,
 *:after,
 *:before {
@@ -1906,7 +2148,7 @@ section.half-large .mCSB_container,
   box-sizing: border-box;
 }
 
-/* line 22, ../../sass/screen.scss */
+/* line 23, ../../sass/screen.scss */
 body,
 html {
   font-size: 100%;
@@ -1916,58 +2158,58 @@ html {
   color: white;
 }
 
-/* line 31, ../../sass/screen.scss */
+/* line 32, ../../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 35, ../../sass/screen.scss */
+/* line 36, ../../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 39, ../../sass/screen.scss */
+/* line 40, ../../sass/screen.scss */
 a {
   color: #f0f0f0;
   text-decoration: none;
 }
-/* line 42, ../../sass/screen.scss */
+/* line 43, ../../sass/screen.scss */
 a:hover {
   color: black;
 }
 
-/* line 47, ../../sass/screen.scss */
+/* line 48, ../../sass/screen.scss */
 h1 {
   font-size: 3.1rem;
   margin: 0 0 1.424rem 0;
 }
 
-/* line 52, ../../sass/screen.scss */
+/* line 53, ../../sass/screen.scss */
 h2 {
   font-size: 2.2rem;
   margin: 1.46rem 0 1.168rem 0;
 }
 
-/* line 57, ../../sass/screen.scss */
+/* line 58, ../../sass/screen.scss */
 h3, h4 {
   font-size: 1.64rem;
   margin: 1.14rem 0 0.912rem 0;
 }
 
-/* line 63, ../../sass/screen.scss */
+/* line 64, ../../sass/screen.scss */
 h3, h5 {
   font-weight: 700;
 }
 
-/* line 67, ../../sass/screen.scss */
+/* line 68, ../../sass/screen.scss */
 h5, h6 {
   font-size: 22px;
   margin: 0.5rem 0 0.4rem 0;
 }
 
-/* line 84, ../../sass/screen.scss */
+/* line 85, ../../sass/screen.scss */
 input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
@@ -1987,7 +2229,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   box-shadow: #e2211a 0 1px 0 0;
 }
 
-/* line 101, ../../sass/screen.scss */
+/* line 102, ../../sass/screen.scss */
 input:not([type]):focus:not([readonly]) + label,
 input[type=text]:focus:not([readonly]) + label,
 input[type=password]:focus:not([readonly]) + label,
@@ -2004,17 +2246,53 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #e2211a;
 }
 
-/* line 105, ../../sass/screen.scss */
+/* line 106, ../../sass/screen.scss */
+.select-wrapper input.select-dropdown,
+.select-wrapper span.caret {
+  color: #9e9e9e;
+}
+
+/* line 110, ../../sass/screen.scss */
+.dropdown-content {
+  background-color: #101010;
+}
+
+/* line 115, ../../sass/screen.scss */
+.select-dropdown li.disabled,
+.select-dropdown li.disabled > span,
+.select-dropdown li.optgroup {
+  color: rgba(158, 158, 158, 0.5);
+}
+
+/* line 120, ../../sass/screen.scss */
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #e2211a;
+}
+
+/* line 127, ../../sass/screen.scss */
+.dropdown-content li:hover:not(.disabled),
+.dropdown-content li.active:not(.disabled),
+.dropdown-content li.selected:not(.disabled) {
+  background-color: rgba(58, 45, 45, 0.2);
+}
+
+/* line 132, ../../sass/screen.scss */
+.input-field {
+  margin-top: 0;
+}
+
+/* line 136, ../../sass/screen.scss */
 .btn, .btn-large {
   background-color: #e2211a;
 }
 
-/* line 108, ../../sass/screen.scss */
+/* line 139, ../../sass/screen.scss */
 .btn:hover, .btn-large:hover {
   background-color: #e7352e;
 }
 
-/* line 112, ../../sass/screen.scss */
+/* line 143, ../../sass/screen.scss */
 #map {
   height: 100%;
   width: 50%;

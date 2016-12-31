@@ -1,10 +1,47 @@
+@keyframes translate-title-reset {
+  0% {
+    min-width: 0%;
+  }
+  100% {
+    min-width: 100%;
+  }
+}
+@keyframes translate-title {
+  0% {
+    min-width: 100%;
+  }
+  100% {
+    min-width: 0;
+  }
+}
+
 #section-roster {
+
+  .wrapper-title-anim {
+    position: relative;
+    height: 77px;
+    h1 {
+      position: absolute;
+      min-width: 100%;
+      text-align: center;
+      width: auto;
+      &.anim-title {
+        animation: translate-title 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+      &.anim-title-reset {
+        animation: translate-title-reset 0.3s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
 
   .info {
     height: 100%;
     min-height: 100%;
     padding: 50px 80px;
     &.half-panel {
+
       &:after {
         content: "";
         display: block;
@@ -16,19 +53,32 @@
         background: rgba(black, 0.83);
         //z-index: 500;
       }
-      .itemList:not(.active):not(.hover-active):after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      .itemList:not(.active):not(.hover-active) .player-wrapper:after {
         background: rgba(black, 0.83);
         z-index: 500;
+        @include transition(all 0.3s ease-in-out);
+      }
+      .itemList:not(.active):not(.hover-active) .player-wrapper:hover:after {
+        z-index: auto;
       }
     }
     &.half-large {
+      &.half-panel {
+        @media screen and (min-width: 992px) {
+          padding: 50px 30px;
+        }
+        @media screen and (min-width: 600px) and (max-width: 991px) {
+          padding: 20px 30px 50px 30px;
+        }
+        padding: 20px 0 20px 40px;
+        //h1 {
+        //  text-align: left;
+        //  @include transition(all 0.3s ease-in-out);
+        //}
+        .info-text-inside {
+          padding: 0;
+        }
+      }
       position: relative;
       @media screen and (min-width: 992px) {
         padding: 50px 60px;
@@ -41,12 +91,6 @@
     position: relative;
     font-size: 22px;
     background: rgba(21, 21, 21, .925);
-    .info-text-inside {
-      //padding: 0 20px;
-    }
-    div {
-      //padding-bottom: 15px;
-    }
     .itemList {
       position: relative;
       &.active,
@@ -77,6 +121,7 @@
     position: absolute;
     top: -15px;
     //left: -10%;
+    border: 1px solid darken(#71100d, 23%);
     background: darken(#71100d, 23%);
   }
   &:hover {
@@ -118,12 +163,13 @@
   }
 }
 
-.player {
+#section-roster .player {
   width: 80%;
   margin: 0 10%;
+  padding-bottom: 0;
 }
 
-.player-info {
+#section-roster .player-info {
   font-family: Graduate;
   position: relative;
   margin-top: 15px;
@@ -139,7 +185,7 @@
   position: absolute;
   top: -15px;
   width: 100%; //width: 250px;
-  height: 270px;
+  height: 280px;
   background: transparent;
   opacity: 0;
   z-index: 50;
@@ -161,6 +207,11 @@
   }
 }
 
+.half-panel-profile,
+.half-large {
+  @include transition(all 0.5s ease-in-out);
+}
+
 .row .col.half-panel-profile {
   position: absolute;
   left: -50%;
@@ -180,12 +231,30 @@
   }
   .position-list {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    margin: 0;
+    top: 0px;
+    right: 35px;
     li {
+      font-family: Graduate;
       display: inline-block;
+      font-size: 24px;
+      line-height: 50px;
+      vertical-align: middle;
       &.coach-post {
-        display: none;
+        text-indent: -200%;
+        overflow: hidden;
+        height: 50px;
+        width: 50px;
+        &:after {
+          background: url('../images/cap.png') no-repeat;
+          background-size: cover;
+          content: '';
+          width: 50px;
+          height: 50px;
+          display: block;
+          position: absolute;
+          top: 0;
+        }
       }
     }
   }
@@ -197,7 +266,7 @@
   .big-head {
     width: 50%;
     height: auto;
-    margin-bottom: 20%;
+    margin-top: 15%;
   }
   .player-infos {
     &:after {
@@ -212,6 +281,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-bottom: 110px;
     background: #141414;
     .player-name {
       width: 100%;

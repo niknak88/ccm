@@ -1,0 +1,140 @@
+#map {
+  margin-bottom: 150px;
+}
+
+.info .cta-shop {
+  position: absolute;
+  top: -88px;
+  right: -88px;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  padding: 0;
+  background: #71100d;
+  transform: rotate(45deg);
+  align-items: flex-end;
+  cursor: pointer;
+  a {
+    width: 56%;
+    margin: 0 auto;
+    line-height: 22px;
+    div {
+      font-weight: bold;
+      letter-spacing: 3px;
+      span {
+        font-size: 0.75em;
+        display: block;
+        text-transform: lowercase;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+.info.half-large.shop-panel {
+  padding: 120px 20px 160px 20px;
+}
+
+.info.shop-panel {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  z-index: 502;
+  width: 50%;
+  height: 100%;
+  background: rgba(21, 21, 21, 0.98);
+  font-size: 0;
+  div {
+    padding-bottom: 0;
+  }
+  &.open {
+    left: 0;
+  }
+  .shop-item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 20px;
+    text-shadow: black 0 0 10px, black 5px 0px 8px,black 0 5px 8px;
+    padding: 10px;
+  }
+}
+
+
+.shop-panel .shop-item {
+  position: relative;
+  margin-bottom: 10px;
+  background: white;
+  &:hover {
+    .shop-item-price {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
+
+.shop-item-price {
+  background: rgba(black, 0.45);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  div {
+    width: 50%;
+    height: 22px;
+    line-height: 22px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+.carrousel-sponsors {
+  height: 150px;
+  width: 100%;
+  background: #101010;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  overflow: hidden;
+  z-index: 503;
+  .scroller{
+    width: 100%;
+    overflow: hidden;
+    ul {
+      margin: 30px 0;
+    }
+    li {
+      display: inline-block;
+      width: auto;
+      height: 100px;
+      a {
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+      }
+      img {
+        width: auto;
+        height: 100%;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        @include single-transition(all, 0.3s, ease-in);
+      }
+      &:hover img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+  }
+}
