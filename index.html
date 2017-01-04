@@ -217,30 +217,41 @@
     <!--Scheduler-->
     <section class="section" id="section-scheduler">
         <div class="">
-
+            <!--Title section with select years and type event-->
             <div class="title-page row">
-                <div class="years-schedules col s1 offset-s3">
-                    <ul>
-                        <li>2014</li>
-                        <li>2015</li>
-                        <li class="active">2016</li>
-                        <li>2017</li>
-                    </ul>
+                <div class="input-field select select-year years-schedules col s1 offset-s3">
+                    <select>
+                        <option disabled selected>Choose year</option>
+                        <option value="1388530800">2014</option>
+                        <option value="1420066800">2015</option>
+                        <option value="1451602800" selected>2016</option>
+                        <option value="1483225200">2017</option>
+                    </select>
                 </div>
                 <h1 class="col s4">Schedules</h1>
-                <div class="input-field col s2 offset-s1">
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                <div class="input-field select select-type col s2 offset-s1">
+                    <select multiple>
+                        <option value="" disabled selected>Choose type</option>
+                        <option value="flag">Flag</option>
+                        <option value="u19">U19</option>
+                        <option value="senior">Senior</option>
                     </select>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="year-sep col s12">2014</div>
-                    <div class="col s12 match-wrapper">
+            <!--Button to move up and down list-->
+            <a class="waves-effect waves-light btn btn-top"><i class="fa fa-level-up right" aria-hidden="true"></i>Prev date</a>
+            <a class="waves-effect waves-light btn btn-bottom"><i class="fa fa-level-down right" aria-hidden="true"></i>Next date</a>
+            <!--List of years-->
+            <ul class="containers container-years">
+                <li class="row row-year year-sep col s12" data-year="1388530800">2014</li>
+                <li class="row row-year year-sep col s12" data-year="1420066800">2015</li>
+                <li class="row row-year year-sep col s12" data-year="1451602800">2016</li>
+                <li class="row row-year year-sep col s12" data-year="1483225200">2017</li>
+            </ul>
+
+            <ul class="containers container-games">
+                <li class="row row-game first match-wrapper" data-type-event="senior" data-kickoff-date="1416740400">
+
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -271,8 +282,9 @@
                                 <span>Mons</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+
+                </li>
+                <li class="row row-game last match-wrapper" data-type-event="senior" data-kickoff-date="1418554800">
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -303,8 +315,75 @@
                                 <span>Waterloo</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+                </li>
+                <li class="row row-game first match-wrapper" data-type-event="senior" data-kickoff-date="1448805600">
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">27/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>16</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">12h @Waterloo</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="flag" data-kickoff-date="1449756000">
+
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">27/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>16</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">12h @Waterloo</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game last match-wrapper" data-type-event="senior" data-kickoff-date="1450620000">
+
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -335,9 +414,42 @@
                                 <span>Andenne</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="year-sep col s12">2015</div>
-                    <div class="col s12 match-wrapper">
+                </li>
+                <li class="row row-game first match-wrapper" data-type-event="senior" data-kickoff-date="1463306400">
+
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-bears">
+                            <img src="http://img4.hostingpics.net/pics/213557AndenneBears.png" height="150"
+                                 align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">11/10</div>
+                            <div class="versus-match final-score score-win">
+                                <span>20</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">12h @Andenne</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Bears
+                                <span>Andenne</span>
+                            </div>
+                        </div>
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1464526800">
+
                         <div class="teams-left teams-bg t-warriors">
                             <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
                                  height="150" align="right"/>
@@ -368,8 +480,42 @@
                                 <span>Charleroi</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1474203600">
+
+                        <div class="teams-left teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">05/10</div>
+                            <div class="versus-match final-score score-win">
+                                <span>6</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">1h @Roux</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1474808400">
+
                         <div class="teams-left teams-bg t-bears">
                             <img src="http://img4.hostingpics.net/pics/213557AndenneBears.png" height="150"
                                  align="right"/>
@@ -400,9 +546,9 @@
                                 <span>Charleroi</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="year-sep col s12">2016</div>
-                    <div class="col s12 match-wrapper">
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1475413200">
+
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -433,8 +579,43 @@
                                 <span>Mons</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1476007200">
+
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-knights">
+                            <img src="http://img4.hostingpics.net/pics/4649131363145917331601302769001164135562166587629n.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">12/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>21</span>VS<span>17</span>
+                            </div>
+                            <div class="place-match">12h @Mons</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Knights
+                                <span>Mons</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1476018000">
+
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -465,8 +646,10 @@
                                 <span>Waterloo</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="flag" data-kickoff-date="1476518400">
+
                         <div class="teams-left teams-bg t-ccm">
                             <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
                                  align="right"/>
@@ -495,8 +678,10 @@
                                 <span>Andenne</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1476622800">
+
                         <div class="teams-left teams-bg t-warriors">
                             <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
                                  height="150" align="right"/>
@@ -525,8 +710,10 @@
                                 <span>Charleroi</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 match-wrapper">
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1477216800">
+
                         <div class="teams-left teams-bg t-bears">
                             <img src="http://img4.hostingpics.net/pics/213557AndenneBears.png" height="150"
                                  align="right"/>
@@ -555,9 +742,209 @@
                                 <span>Charleroi</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1477825200">
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">27/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>16</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">12h @Waterloo</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1478440800">
+
+                        <div class="teams-left teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">05/10</div>
+                            <div class="versus-match final-score score-win">
+                                <span>6</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">1h @Roux</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="u19" data-kickoff-date="1480255200">
+
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-knights">
+                            <img src="http://img4.hostingpics.net/pics/4649131363145917331601302769001164135562166587629n.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">12/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>21</span>VS<span>17</span>
+                            </div>
+                            <div class="place-match">12h @Mons</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Knights
+                                <span>Mons</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game match-wrapper" data-type-event="senior" data-kickoff-date="1480845600">
+
+                        <div class="teams-left teams-bg t-warriors">
+                            <img src="http://img4.hostingpics.net/pics/4844802405162131386153743928251510o.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Warriors
+                                <span>Waterloo</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">05/10</div>
+                            <div class="versus-match final-score score-win">
+                                <span>6</span>VS<span>14</span>
+                            </div>
+                            <div class="place-match">1h @Roux</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game last match-wrapper" data-type-event="u19" data-kickoff-date="1480856400" current selected="true">
+                        <div class="teams-left teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-knights">
+                            <img src="http://img4.hostingpics.net/pics/4649131363145917331601302769001164135562166587629n.png"
+                                 height="150" align="right"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">12/09</div>
+                            <div class="versus-match final-score score-win">
+                                <span>21</span>VS<span>17</span>
+                            </div>
+                            <div class="place-match">12h @Mons</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams ">
+                                Knights
+                                <span>Mons</span>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="row row-game first last match-wrapper" data-type-event="senior" data-kickoff-date="1484488800">
+
+                        <div class="teams-left teams-bg t-bears">
+                            <img src="http://img4.hostingpics.net/pics/213557AndenneBears.png" height="150"
+                                 align="right"/>
+                        </div>
+                        <div class="teams-right teams-bg t-ccm">
+                            <img src="http://img4.hostingpics.net/pics/867258CoalMiners.png" height="150"
+                                 align="left"/>
+                        </div>
+                        <div class='teams-bg teams-hexagon-pattern'></div>
+                        <div class='teams-bg teams-shadow-pattern'></div>
+                        <div class="tags"><span>Seniors</span><span>Saison</span></div>
+                        <div class="col s4 col-teams col-teams-left">
+                            <div class="title-teams">
+                                Bears
+                                <span>Andenne</span>
+                            </div>
+                        </div>
+                        <div class="col s4 col-versus">
+                            <div class="date-match">21/11</div>
+                            <div class="place-match">15h @Roux</div>
+                            <div class="versus-match">VS</div>
+                        </div>
+                        <div class="col s4 col-teams col-teams-right">
+                            <div class="title-teams">
+                                Coal Miners
+                                <span>Charleroi</span>
+                            </div>
+                        </div>
+
+                </li>
+            </ul>
         </div>
         <a href="#standing" class="cta-down cta-down-small">
             <div class="cta-down-title">
@@ -1155,6 +1542,7 @@
 <!--Custom JS-->
 <script src="assets/js/page-down.js"></script>
 <script src="assets/js/CCM.js"></script>
+<script src="assets/js/scheduler.js"></script>
 <script src="assets/js/custom-gmap.js"></script>
 </body>
 </html>

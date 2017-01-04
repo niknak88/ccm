@@ -1092,6 +1092,14 @@ header nav a:hover:before {
   text-align: center;
 }
 /* line 4, ../../sass/partials/_schedules.scss */
+#section-scheduler .row {
+  margin-bottom: 0;
+}
+/* line 7, ../../sass/partials/_schedules.scss */
+#section-scheduler .container-games {
+  margin: 0;
+}
+/* line 10, ../../sass/partials/_schedules.scss */
 #section-scheduler .match-wrapper span {
   display: block;
   font-size: 16px;
@@ -1099,29 +1107,30 @@ header nav a:hover:before {
   line-height: 16px;
   text-shadow: 0 0 10px rgba(21, 21, 21, 0.9);
 }
-/* line 12, ../../sass/partials/_schedules.scss */
+/* line 18, ../../sass/partials/_schedules.scss */
 #section-scheduler .title-page {
   padding: 2.1rem 0 1.68rem 0;
   background: #191919;
-  z-index: 5000;
+  z-index: 1988;
+  position: relative;
   width: 100%;
   margin-bottom: 0;
 }
-/* line 19, ../../sass/partials/_schedules.scss */
+/* line 26, ../../sass/partials/_schedules.scss */
 #section-scheduler h1 {
   padding: 0;
   margin: 0;
   display: inline-block;
   text-align: center;
 }
-/* line 27, ../../sass/partials/_schedules.scss */
+/* line 34, ../../sass/partials/_schedules.scss */
 #section-scheduler .match-wrapper {
   border-bottom: 1px solid #333;
   border-top: 1px solid #000;
   background-color: rgba(41, 41, 41, 0.9);
   position: relative;
 }
-/* line 34, ../../sass/partials/_schedules.scss */
+/* line 41, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-bg {
   position: absolute;
   top: 0;
@@ -1129,7 +1138,7 @@ header nav a:hover:before {
   width: 50%;
   overflow: hidden;
 }
-/* line 40, ../../sass/partials/_schedules.scss */
+/* line 47, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-bg img {
   opacity: 0.5;
   display: block;
@@ -1138,23 +1147,23 @@ header nav a:hover:before {
   bottom: 0;
   margin: auto;
 }
-/* line 50, ../../sass/partials/_schedules.scss */
+/* line 57, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-left {
   left: 0;
 }
-/* line 52, ../../sass/partials/_schedules.scss */
+/* line 59, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-left img {
   right: 150px;
 }
-/* line 57, ../../sass/partials/_schedules.scss */
+/* line 64, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-right {
   right: 0;
 }
-/* line 59, ../../sass/partials/_schedules.scss */
+/* line 66, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-right img {
   left: 150px;
 }
-/* line 65, ../../sass/partials/_schedules.scss */
+/* line 72, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-hexagon-pattern {
   background: #222222 url("http://survivor.fantasy.nfl.com/static/img/hexagon-pattern-bg_1414017724.png");
   position: absolute;
@@ -1164,7 +1173,7 @@ header nav a:hover:before {
   height: 100%;
   opacity: 0.08;
 }
-/* line 76, ../../sass/partials/_schedules.scss */
+/* line 83, ../../sass/partials/_schedules.scss */
 #section-scheduler .teams-shadow-pattern {
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.8) 40%, #000000 45%, #000000 55%, rgba(0, 0, 0, 0.8) 60%, rgba(255, 255, 255, 0) 80%), linear-gradient(to top, rgba(0, 0, 0, 0.7) -20%, rgba(255, 255, 255, 0) 20%), linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0) 3.8%, rgba(255, 255, 255, 0) 96.2%, rgba(0, 0, 0, 0.4));
   background-blend-mode: multiply;
@@ -1174,23 +1183,23 @@ header nav a:hover:before {
   width: 100%;
   height: 100%;
 }
-/* line 89, ../../sass/partials/_schedules.scss */
+/* line 96, ../../sass/partials/_schedules.scss */
 #section-scheduler .t-ccm {
   background-color: rgba(138, 2, 2, 0.8);
 }
-/* line 93, ../../sass/partials/_schedules.scss */
+/* line 100, ../../sass/partials/_schedules.scss */
 #section-scheduler .t-warriors {
   background: rgba(24, 133, 7, 0.8);
 }
-/* line 97, ../../sass/partials/_schedules.scss */
+/* line 104, ../../sass/partials/_schedules.scss */
 #section-scheduler .t-bears {
   background: rgba(255, 255, 0, 0.8);
 }
-/* line 101, ../../sass/partials/_schedules.scss */
+/* line 108, ../../sass/partials/_schedules.scss */
 #section-scheduler .t-knights {
   background: rgba(227, 111, 1, 0.8);
 }
-/* line 105, ../../sass/partials/_schedules.scss */
+/* line 112, ../../sass/partials/_schedules.scss */
 #section-scheduler .tags {
   position: absolute;
   top: 0;
@@ -1200,7 +1209,7 @@ header nav a:hover:before {
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 10px;
 }
-/* line 111, ../../sass/partials/_schedules.scss */
+/* line 118, ../../sass/partials/_schedules.scss */
 #section-scheduler .tags span {
   display: inline-block;
   background: red;
@@ -1208,20 +1217,14 @@ header nav a:hover:before {
   font-size: 10px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
-/* line 117, ../../sass/partials/_schedules.scss */
+/* line 124, ../../sass/partials/_schedules.scss */
 #section-scheduler .tags span:last-child {
   border-right: 0;
   -moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 125, ../../sass/partials/_schedules.scss */
-#section-scheduler .years-schedules {
-  overflow: hidden;
-  height: 25px;
-  margin-top: 22px;
-}
-/* line 129, ../../sass/partials/_schedules.scss */
+/* line 133, ../../sass/partials/_schedules.scss */
 #section-scheduler .years-schedules ul {
   margin: 0;
   line-height: 25px;
@@ -1229,8 +1232,110 @@ header nav a:hover:before {
   font-size: 20px;
   font-family: "Ropa Sans";
 }
+/* line 142, ../../sass/partials/_schedules.scss */
+#section-scheduler .col-versus {
+  z-index: 500;
+  position: relative;
+  padding: 10px;
+  height: 110px;
+  color: #ccc;
+  font-family: 'Ropa Sans', sans-serif;
+}
+/* line 150, ../../sass/partials/_schedules.scss */
+#section-scheduler .date-match {
+  font-size: 20px;
+}
+/* line 153, ../../sass/partials/_schedules.scss */
+#section-scheduler .versus-match {
+  font-size: 28px;
+  font-family: 'Graduate', cursive;
+}
 /* line 156, ../../sass/partials/_schedules.scss */
-#section-scheduler .row .year-sep {
+#section-scheduler .versus-match.final-score {
+  font-size: 25px;
+}
+/* line 158, ../../sass/partials/_schedules.scss */
+#section-scheduler .versus-match.final-score span {
+  display: inline-block;
+  font-size: 30px;
+  padding: 0 20px;
+}
+/* line 163, ../../sass/partials/_schedules.scss */
+#section-scheduler .versus-match.final-score.score-win {
+  color: #33861C;
+}
+/* line 166, ../../sass/partials/_schedules.scss */
+#section-scheduler .versus-match.final-score.score-loose {
+  color: #9d0000;
+}
+/* line 171, ../../sass/partials/_schedules.scss */
+#section-scheduler .col-teams {
+  z-index: 500;
+  position: relative;
+  padding: 15px;
+  height: 110px;
+}
+/* line 176, ../../sass/partials/_schedules.scss */
+#section-scheduler .col-teams.col-teams-left {
+  text-align: right;
+  padding-right: 50px;
+}
+/* line 180, ../../sass/partials/_schedules.scss */
+#section-scheduler .col-teams.col-teams-right {
+  text-align: left;
+  padding-left: 50px;
+}
+/* line 185, ../../sass/partials/_schedules.scss */
+#section-scheduler .title-teams {
+  font-size: 35px;
+  font-family: 'Graduate', cursive;
+  letter-spacing: 2px;
+  text-shadow: 1px -1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), 1px 0px rgba(21, 21, 21, 0.9), -1px 0px rgba(21, 21, 21, 0.9), 0px 1px rgba(21, 21, 21, 0.9), 0px -1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), 1px -1px rgba(21, 21, 21, 0.9);
+}
+/* line 192, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers {
+  margin: 140px 0 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 198, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers .row {
+  width: 100%;
+  height: 112px;
+  padding: 0;
+  margin: 0;
+}
+/* line 206, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers .row.first, #section-scheduler ul.containers .row.first-filter {
+  margin-top: 47px;
+}
+/* line 209, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers .row p {
+  padding: 25px;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+/* line 218, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers.container-years .row {
+  position: absolute;
+  width: 100%;
+  height: 47px;
+}
+/* line 222, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers.container-years .row p {
+  padding: 8px 15px;
+  margin: 0;
+  font-size: 20px;
+}
+/* line 228, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers.container-years .row.year-sep {
   display: block;
   background-color: #191919;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #191919), color-stop(100%, rgba(51, 51, 51, 0.5)));
@@ -1243,10 +1348,9 @@ header nav a:hover:before {
   font-weight: 700;
   font-family: "Ropa Sans";
   padding: 10px 0 10px 75px;
-  position: relative;
 }
-/* line 166, ../../sass/partials/_schedules.scss */
-#section-scheduler .row .year-sep:before {
+/* line 237, ../../sass/partials/_schedules.scss */
+#section-scheduler ul.containers.container-years .row.year-sep:before {
   content: "";
   width: 50px;
   height: 7px;
@@ -1256,65 +1360,19 @@ header nav a:hover:before {
   left: 0;
   top: 20px;
 }
-/* line 178, ../../sass/partials/_schedules.scss */
-#section-scheduler .col-versus {
-  z-index: 500;
-  position: relative;
-  padding: 10px;
-  height: 110px;
-  color: #ccc;
-  font-family: 'Ropa Sans', sans-serif;
+/* line 253, ../../sass/partials/_schedules.scss */
+#section-scheduler .btn-top {
+  position: absolute;
+  right: 15px;
+  top: 140px;
+  z-index: 600;
 }
-/* line 186, ../../sass/partials/_schedules.scss */
-#section-scheduler .date-match {
-  font-size: 20px;
-}
-/* line 189, ../../sass/partials/_schedules.scss */
-#section-scheduler .versus-match {
-  font-size: 28px;
-  font-family: 'Graduate', cursive;
-}
-/* line 192, ../../sass/partials/_schedules.scss */
-#section-scheduler .versus-match.final-score {
-  font-size: 25px;
-}
-/* line 194, ../../sass/partials/_schedules.scss */
-#section-scheduler .versus-match.final-score span {
-  display: inline-block;
-  font-size: 30px;
-  padding: 0 20px;
-}
-/* line 199, ../../sass/partials/_schedules.scss */
-#section-scheduler .versus-match.final-score.score-win {
-  color: #33861C;
-}
-/* line 202, ../../sass/partials/_schedules.scss */
-#section-scheduler .versus-match.final-score.score-loose {
-  color: #9d0000;
-}
-/* line 207, ../../sass/partials/_schedules.scss */
-#section-scheduler .col-teams {
-  z-index: 500;
-  position: relative;
-  padding: 15px;
-  height: 110px;
-}
-/* line 212, ../../sass/partials/_schedules.scss */
-#section-scheduler .col-teams.col-teams-left {
-  text-align: right;
-  padding-right: 50px;
-}
-/* line 216, ../../sass/partials/_schedules.scss */
-#section-scheduler .col-teams.col-teams-right {
-  text-align: left;
-  padding-left: 50px;
-}
-/* line 221, ../../sass/partials/_schedules.scss */
-#section-scheduler .title-teams {
-  font-size: 35px;
-  font-family: 'Graduate', cursive;
-  letter-spacing: 2px;
-  text-shadow: 1px -1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), -1px -1px rgba(21, 21, 21, 0.9), 1px 0px rgba(21, 21, 21, 0.9), -1px 0px rgba(21, 21, 21, 0.9), 0px 1px rgba(21, 21, 21, 0.9), 0px -1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), -1px 1px rgba(21, 21, 21, 0.9), 1px 1px rgba(21, 21, 21, 0.9), 1px -1px rgba(21, 21, 21, 0.9);
+/* line 259, ../../sass/partials/_schedules.scss */
+#section-scheduler .btn-bottom {
+  position: absolute;
+  right: 15px;
+  bottom: 40px;
+  z-index: 50002;
 }
 
 @keyframes translate-title-reset {
@@ -2002,34 +2060,34 @@ section.half-large .mCSB_container,
 
 /* line 23, ../../sass/partials/_sections.scss */
 #section-scheduler {
-  background-image: url(../images/1.jpg);
+  background-color: #191919;
 }
 
-/* line 27, ../../sass/partials/_sections.scss */
+/* line 28, ../../sass/partials/_sections.scss */
 #section-roster {
   background-image: url(../images/3_2.png);
 }
 
-/* line 31, ../../sass/partials/_sections.scss */
+/* line 32, ../../sass/partials/_sections.scss */
 #section-standing {
   background-image: url(../images/5_4.png);
 }
 
-/* line 36, ../../sass/partials/_sections.scss */
+/* line 37, ../../sass/partials/_sections.scss */
 #section-training {
   background-image: url(../images/6_1.png);
 }
 
-/* line 40, ../../sass/partials/_sections.scss */
+/* line 41, ../../sass/partials/_sections.scss */
 #section-contact {
   background: #191919;
 }
 
-/* line 44, ../../sass/partials/_sections.scss */
+/* line 45, ../../sass/partials/_sections.scss */
 .row .col.title-left {
   padding: 0;
 }
-/* line 46, ../../sass/partials/_sections.scss */
+/* line 47, ../../sass/partials/_sections.scss */
 .row .col.title-left a {
   background: rgba(21, 21, 21, 0.3);
   position: relative;
@@ -2040,7 +2098,7 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 52, ../../sass/partials/_sections.scss */
+/* line 53, ../../sass/partials/_sections.scss */
 .row .col.title-left a:after {
   position: absolute;
   width: 100%;
@@ -2052,23 +2110,23 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 60, ../../sass/partials/_sections.scss */
+/* line 61, ../../sass/partials/_sections.scss */
 .row .col.title-left a:hover {
   color: white;
 }
-/* line 62, ../../sass/partials/_sections.scss */
+/* line 63, ../../sass/partials/_sections.scss */
 .row .col.title-left a:hover:after {
   background: rgba(21, 21, 21, 0.4);
 }
-/* line 66, ../../sass/partials/_sections.scss */
+/* line 67, ../../sass/partials/_sections.scss */
 .row .col.title-left a.active {
   color: white;
 }
-/* line 68, ../../sass/partials/_sections.scss */
+/* line 69, ../../sass/partials/_sections.scss */
 .row .col.title-left a.active:after {
   display: none;
 }
-/* line 73, ../../sass/partials/_sections.scss */
+/* line 74, ../../sass/partials/_sections.scss */
 .row .col.title-left h1 {
   margin: 0 20px;
   text-align: center;
@@ -2079,14 +2137,14 @@ section.half-large .mCSB_container,
   transition: all 0.2s ease-in-out;
 }
 @media (min-width: 1200px) {
-  /* line 73, ../../sass/partials/_sections.scss */
+  /* line 74, ../../sass/partials/_sections.scss */
   .row .col.title-left h1 {
     max-width: 570px;
     margin: 0 auto;
   }
 }
 
-/* line 85, ../../sass/partials/_sections.scss */
+/* line 86, ../../sass/partials/_sections.scss */
 .info {
   height: 100%;
   min-height: 100%;
@@ -2095,37 +2153,37 @@ section.half-large .mCSB_container,
   font-size: 22px;
   background: rgba(21, 21, 21, 0.9);
 }
-/* line 89, ../../sass/partials/_sections.scss */
+/* line 90, ../../sass/partials/_sections.scss */
 .info.half-large {
   padding: 20px 0 20px 80px;
 }
 @media screen and (min-width: 992px) {
-  /* line 89, ../../sass/partials/_sections.scss */
+  /* line 90, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 50px 60px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 991px) {
-  /* line 89, ../../sass/partials/_sections.scss */
+  /* line 90, ../../sass/partials/_sections.scss */
   .info.half-large {
     padding: 20px 60px 50px 60px;
   }
 }
-/* line 98, ../../sass/partials/_sections.scss */
+/* line 99, ../../sass/partials/_sections.scss */
 .info.full-large {
   padding: 20px 20px 20px 80px;
 }
 @media screen and (min-width: 600px) {
-  /* line 98, ../../sass/partials/_sections.scss */
+  /* line 99, ../../sass/partials/_sections.scss */
   .info.full-large {
     padding: 30px;
   }
 }
-/* line 103, ../../sass/partials/_sections.scss */
+/* line 104, ../../sass/partials/_sections.scss */
 .info.full-large h1 {
   text-align: center;
 }
-/* line 110, ../../sass/partials/_sections.scss */
+/* line 111, ../../sass/partials/_sections.scss */
 .info .info-text-inside {
   padding: 0 20px;
   -webkit-transition: all 0.2s ease-in;
@@ -2133,7 +2191,7 @@ section.half-large .mCSB_container,
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 114, ../../sass/partials/_sections.scss */
+/* line 115, ../../sass/partials/_sections.scss */
 .info div {
   /*text-shadow: 0 1px 2px rgba($redCM,0.6);*/
   padding-bottom: 15px;

@@ -1,6 +1,12 @@
 
 #section-scheduler {
   text-align: center;
+  .row {
+    margin-bottom: 0;
+  }
+  .container-games {
+    margin: 0;
+  }
   .match-wrapper span {
     display: block;
     font-size: 16px;
@@ -12,7 +18,8 @@
   .title-page {
     padding: 2.1rem 0 1.68rem 0;
     background: #191919;
-    z-index: 5000;
+    z-index: 1988;
+    position: relative;
     width: 100%;
     margin-bottom: 0;
   }
@@ -123,55 +130,12 @@
   }
 
   .years-schedules {
-    overflow: hidden;
-    height: 25px;
-    margin-top: 22px;
     ul {
       margin: 0;
       line-height: 25px;
       font-weight: 700;
       font-size: 20px;
       font-family: "Ropa Sans";
-    }
-  }
-
-
-  //.input-field .select-wrapper {
-  //  .caret {
-  //    color: white;
-  //  }
-  //  ul.select-dropdown {
-  //    background: #191919;
-  //    li.active,
-  //    li span:hover {
-  //      color: red;
-  //      background: #191919;
-  //    }
-  //    li span {
-  //      color: white;
-  //    }
-  //  }
-  //}
-
-  .row .year-sep {
-    display: block;
-    background-color: #191919;
-    @include background-image(linear-gradient(#191919, rgba(#333, .5)));
-    text-align: left;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Ropa Sans";
-    padding: 10px 0 10px 75px;
-    position: relative;
-    &:before {
-      content: "";
-      width: 50px;
-      height: 7px;
-      background: white;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 20px;
     }
   }
 
@@ -223,5 +187,79 @@
     font-family: 'Graduate', cursive;
     letter-spacing: 2px;
     @include stroke(1, rgba(21, 21, 21, 0.9));
+  }
+
+  ul.containers {
+    margin: 140px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include transition(all 0.3s ease);
+    .row{
+      width: 100%;
+      height: 112px;
+   //   border-bottom: 1px solid black;
+      padding: 0;
+      margin: 0;
+      //   opacity: 0;
+      &.first,
+      &.first-filter {
+        margin-top: 47px;
+      }
+      p {
+        padding: 25px;
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+      }
+    }
+    &.container-years {
+      .row {
+        position: absolute;
+        width: 100%;
+        height: 47px;
+        p{
+          padding: 8px 15px;
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+      .row.year-sep {
+        display: block;
+        background-color: #191919;
+        @include background-image(linear-gradient(#191919, rgba(#333, .5)));
+        text-align: left;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Ropa Sans";
+        padding: 10px 0 10px 75px;
+        &:before {
+          content: "";
+          width: 50px;
+          height: 7px;
+          background: white;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 20px;
+        }
+      }
+    }
+  }
+
+
+
+  .btn-top {
+    position: absolute;
+    right: 15px;
+    top: 140px;
+    z-index: 600;
+  }
+  .btn-bottom {
+    position: absolute;
+    right: 15px;
+    bottom: 40px;
+    z-index: 50002;
   }
 }
